@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background: #dddddd;
+    font-family: Verdana, Sans-serif;
+}
+
+/*Formatação do corpo da página*/
+#corpo {
+    border-radius: 20px;;
+    width: 1050px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+}
+
+/*Formatação do cabeçalho onde se encontra o nome do sistema*/
+header#cabecalho {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 120px;
+    margin: -10px auto -27px auto;
+    border-bottom: 1px solid #606060;
+
+}
+
+/*Formatação da imagem do logo*/
+header#cabecalho img{
+    width: 80px;
+    border-radius: 10px;
+}
+
+/*Formatação do nome do sistema*/
+nav#nomeLogo h2{
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 30pt;
+    position: relative;
+    left: 85px;
+    top: -95px;							
+}
+nav#nomeLogo h3 {
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 28pt;
+    position: relative;
+    left: 20px;
+    top: -130px;
+}
+
+/*Formatção da tabela de apresentação das boas vindas*/
+header#boasVindas {
+    display: block;
+    position: absolute;
+    font-family: 'FonteLogo', sans-serif;
+    left: 500px;
+    margin-top: -55px; 
+    font-size: 30pt;
+}
+header#boasVindas td {
+    background-color: white;
+}
+
+/*Formatação do botão sair*/
+form#sair input#cSair {
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/*Formatação do menu do gerenciar produto*/
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+
+}
+nav#inicio ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 175px;
+}
+nav li ul {
+    position: absolute;
+    display: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:#000000;
+    background: #09F;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+}
+nav li:hover ul, li.over ul {
+    display: block;
+}
+nav a:hover{
+    background-color: #606060;											
+    color: #FFF;
+}
+nav#inicio {
+    position: absolute;
+    left: 400px;
+    top: 119px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+nav#gerenciarProduto {
+    position: absolute;
+    left: 575px;
+    top: 119px;
+    text-align: center;    
+}
+nav#gerenciarCliente {
+    position: absolute;
+    left: 775px;
+    top: 119px;
+    text-align: center;
+}
+nav#gerenciarVenda{
+    position: absolute;
+    left: 975px;
+    top: 119px;
+    text-align: center;
+}
+/*Formatação da div onde se encontra todo o conteúdo dos produtos*/
+div#conteudoDosProdutos h2#cadastrarOuAtualizarProdutos {
+    padding: 10px;
+    background-color: #dddddd;
+    color: #09F;
+    font-size: 20pt;
+    position: relative;
+    top: 30px;
+    width: 980px;    
+    margin: 80px auto auto auto;
+}
+div#conteudoDosProdutos h2 {
+    padding: 10px;
+    background-color: #dddddd;
+    color: #09F;
+    font-size: 20pt;
+    position: relative;
+    top: 30px;
+    width: 980px;    
+    margin: auto;
+}
+div#conteudoDosProdutos h3 {
+    position: relative;
+    padding: 20px;
+    color: #606060;
+    left: 5px;
+}
+/*Formatação dos inputs dos formulários*/
+input.gerenciarProduto{
+    font-size: 13pt;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    margin: 7px;
+}
+/*Formatação do formulário cadastro de produtos*/
+form#cadastroProduto fieldset {
+    width: 800px;
+    height: 350px;
+    margin: auto;    
+}
+form#cadastroProduto legend {
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#cadastroProduto label{    
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+form#cadastroProduto input#cCadastrarProduto {
+    position: relative;
+    left: 170px;
+    height: 40px;
+}
+form#cadastroProduto input#cAtualizarProduto {
+    position: relative;
+    left: 170px;
+    height: 40px;
+}
+form#cadastroProduto input#cLimparCampo {
+    position: relative;
+    left: 170px;
+    height: 40px;
+}
+
+/*Formatação do formulário verificar estoque do produto*/
+form#verificarEstoque fieldset {
+    width: 800px;
+    height: 350px;
+    margin: auto;
+}
+form#verificarEstoque legend {
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#verificarEstoque label{    
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+form#verificarEstoque input#cPesquisar {
+    position: relative;
+    left: 220px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+form#verificarEstoque table#resultadoPesquisa{
+    width: 400px;
+}
+form#verificarEstoque table#resultadoPesquisa td {
+    padding: 5px;
+    background-color: #dddddd;   
+     width: 400px;
+}
+form#verificarEstoque table#resultadoPesquisa th {
+    background-color: #606060;
+    color: #FFFFFF;          
+     width: 400px;
+}
+/*Formatação do formulário remover produto*/
+form#removerProduto fieldset {
+    width: 800px;
+    height: 375px;
+    margin: auto auto 50px auto;    
+}
+form#removerProduto legend {
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#removerProduto label{    
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+form#removerProduto input#cRemover {
+    position: relative;
+    left: 220px;
+    height: 40px;
+}
+form#removerProduto input#cVisualizar {
+    position: relative;
+    left: 220px;
+    height: 40px;
+}
+form#removerProduto table#resultadoVisualizar {
+    margin-top: 30px;
+}
+form#removerProduto table#resultadoVisualizar td {
+    padding: 5px;
+    background-color: #dddddd;          
+}
+form#removerProduto table#resultadoVisualizar th {
+    background-color: #606060;
+    color: #FFFFFF;          
+}
+
+/*Formatação do rodapé*/
+footer#rodape {
+    background-color: #FFF;
+    width: 1000px;
+    height: 50px;
+    margin: 0px auto 10px auto;
+    border-top: 1px solid #606060;	
+    text-align: center;	
+    font-family: Arial, sans-serif;
+    color: #000;															
+}
+

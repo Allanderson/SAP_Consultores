@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class administrador_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang= \"pt-br\">\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
+      out.write("        <title>Área do Administrador</title>\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href = \"estilo/estiloAdministrador.css\"/>\n");
+      out.write("        <style>\n");
+      out.write("            @font-face{\n");
+      out.write("                font-family: 'FonteLogo';\n");
+      out.write("                src:url(fonte/bubblegum-sans-regular.otf);\n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("        <!-- Logo marca do sistema -->\n");
+      out.write("        <div id=\"corpo\">\n");
+      out.write("            <header id=\"cabecalho\">\n");
+      out.write("                <img src=\"imagens/libelula.jpg\"/>\n");
+      out.write("                <nav id=\"nomeLogo\">\n");
+      out.write("                    <h2>SAP</h2>\n");
+      out.write("                    <h3> Consultores </h3>\n");
+      out.write("                </nav>\n");
+      out.write("            </header>\n");
+      out.write("            <!-- Tabela que apresenata as boas vindas ao administrador -->\n");
+      out.write("            <header id=\"boasVindas\">\n");
+      out.write("                <table>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td id=\"bemVindo\">\n");
+      out.write("                            Olá&nbsp;  \n");
+      out.write("                        </td>\n");
+      out.write("                        <td id=\"nomeCliente\">\n");
+      out.write("                            ");
+      out.print( session.getAttribute("usuario"));
+      out.write("\n");
+      out.write("                        </td>\n");
+      out.write("                    </tr>\n");
+      out.write("                </table>            \n");
+      out.write("            </header>\n");
+      out.write("\n");
+      out.write("            <!-- Botão sair do sistema -->            \n");
+      out.write("            <header id=\"botaoSair\">\n");
+      out.write("                <form id=\"sair\" action=\"Logoff\" method=\"post\">\n");
+      out.write("                    <input type=\"submit\" name=\"tSair\" id=\"cSair\" value=\"sair\"/>\n");
+      out.write("                </form>\n");
+      out.write("            </header>\n");
+      out.write("\n");
+      out.write("            <!-- Relatório das vendas do administrador -->\n");
+      out.write("            <div id=\"corpoDoRelatorioVendas\">\n");
+      out.write("\n");
+      out.write("                <h2 id=\"legendaRelatorio\">Relatório das vendas</h2>\n");
+      out.write("\n");
+      out.write("                <div id=\"valorTotalVendido\">            \n");
+      out.write("                    <table>                \n");
+      out.write("                        <tr>\n");
+      out.write("                            <td><strong>Valor Total Vendido:</strong></td>\n");
+      out.write("                            <td>R$ 753,00</td>\n");
+      out.write("                        </tr>                \n");
+      out.write("                    </table>\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("                <div id=\"valorAReceber\">\n");
+      out.write("                    <table>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td><strong>Valor a Receber:</strong></td>\n");
+      out.write("                            <td>R$ 563,00</td>\n");
+      out.write("                        </tr>\n");
+      out.write("                    </table>    \n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <!-- Área dos menus -->\n");
+      out.write("            <nav id=\"gerenciarProduto\">                \t\n");
+      out.write("                <ul>\n");
+      out.write("                    <li class=\"itemmenu\">\n");
+      out.write("                        <a href=\"gerenciarProduto.jsp\"><strong>Gerenciar Produto</strong></a>                    \n");
+      out.write("                    </li>\n");
+      out.write("                </ul>\n");
+      out.write("            </nav>\n");
+      out.write("\n");
+      out.write("            <nav id=\"gerenciarCliente\">      \n");
+      out.write("                <ul>\n");
+      out.write("                    <li class=\"itemmenu\">\n");
+      out.write("                        <a href=\"gerenciarCliente.jsp\"><strong>Gerenciar Cliente</strong></a>                 \n");
+      out.write("                    </li>\n");
+      out.write("                </ul>\n");
+      out.write("            </nav>\n");
+      out.write("\n");
+      out.write("            <nav id=\"gerenciarVenda\">\n");
+      out.write("                <ul>\n");
+      out.write("                    <li class=\"itemmenu\">\n");
+      out.write("                        <a href=\"gerenciarVenda.jsp\"><strong>Gerenciar Venda</strong></a>                    \n");
+      out.write("                    </li>\n");
+      out.write("                </ul>        \n");
+      out.write("            </nav>\n");
+      out.write("\n");
+      out.write("            <!-- Formulário para dar baixa na dívida do cliente -->\n");
+      out.write("            <div id=\"corpoDarBaixaNasVendas\">\n");
+      out.write("                <h3>Para dar Baixa na Dívida do Cliente<br/>Preencha os Campos Abaixo</h3>\n");
+      out.write("                <form id=\"darBaixaVenda\" method=\"post\" action=\"DarBaixa\">\n");
+      out.write("                    <table>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td>\n");
+      out.write("                                <label for=\"cNomeClienteBaixa\">Nome do Cliente:</label>\n");
+      out.write("                            </td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <input type=\"text\" class=\"gerenciarVendas\" name=\"NomeClienteBaixa\" id=\"cNomeClienteBaixa\" \n");
+      out.write("                                       size=\"30\" maxlength=\"50\"/>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td>\n");
+      out.write("                                <label for=\"cSobreNomeClienteBaixa\">Sobrenome do Cliente:</label>\n");
+      out.write("                            </td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <input type=\"text\" class=\"gerenciarVendas\" name=\"SobrenomeClienteBaixa\" \n");
+      out.write("                                       id=\"cSobreNomeClienteBaixa\" size=\"30\" maxlength=\"50\"/>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td>\n");
+      out.write("                                <label for=\"cEmailClienteBaixa\">Email do Cliente:</label>\n");
+      out.write("                            </td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <input type=\"email\" class=\"gerenciarVendas\" name=\"EmailClienteBaixa\" id=\"cEmailClienteBaixa\" \n");
+      out.write("                                       size=\"30\" maxlength=\"50\"/>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td>\n");
+      out.write("                                <label for=\"cValorPago\">Valor Pago:</label>\n");
+      out.write("                            </td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <input type=\"text\" name=\"ValorPago\" id=\"cValorPago\" class=\"gerenciarVendas\" \n");
+      out.write("                                       placeholder=\"Digite o Valor Pago Ex:50,00\" size=\"30\" maxlength=\"10\"/>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td>\n");
+      out.write("                                <label for=\"cDataPagamento\">Data do Pagamento:</label>\n");
+      out.write("                            </td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <input type=\"date\" class=\"gerenciarVendas\" name=\"DataPagamento\" id=\"cDataPagamento\" size=\"30\"/>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                    </table>\n");
+      out.write("                    <input type=\"submit\"  name=\"tDarBaixa\" id=\"cDarBaixa\" value=\"Dar Baixa\"/>\n");
+      out.write("                </form>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <!-- Formulário para realizar vendas -->\n");
+      out.write("            <div id=\"corpoVendas\">\n");
+      out.write("                <form id=\"vender\" method=\"post\" action=\"VendaProdutos\">\n");
+      out.write("\n");
+      out.write("                    <h1>Realizar Vendas</h1>    \n");
+      out.write("                    <fieldset id=\"dadosDoCliente\">\n");
+      out.write("                        <legend>Dados do Cliente</legend>\n");
+      out.write("                        <table>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cNomeCliente\">Nome do Cliente:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"NomeCliente\" id=\"cNomeCliente\" size=\"30\" maxlength=\"50\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cSobreNomeCliente\">Sobrenome do Cliente:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"SobrenomeCliente\" id=\"cSobreNomeCliente\" size=\"30\" maxlength=\"50\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cEmailCliente\">Email do Cliente:</label></td><td><input type=\"email\" class=\"gerenciarVendas\" name=\"EmailCliente\" id=\"cEmailCliente\" size=\"30\" maxlength=\"80\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                        </table>\n");
+      out.write("                    </fieldset>\n");
+      out.write("\n");
+      out.write("                    <fieldset id=\"dadosVenda\">\n");
+      out.write("                        <legend>Dados Da Venda</legend>\n");
+      out.write("                        <table>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cNomeProdutoVendido\">Nome do Produto:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"NomeProdutoVendido\" id=\"cNomeProdutoVendido\" size=\"30\" maxlength=\"50\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cTipoProdutoVendido\">Tipo do Produto:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"TipoProdutoVendido\" id=\"cTipoProdutoVendido\" size=\"30\" maxlength=\"50\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cVolumeProdutoVendido\">Volume do Produto:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"VolumeProdutoVendido\" id=\"cVolumeProdutoVendido\" size=\"30\" maxlength=\"10\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cQuantidadeProdutosVendidos\">Quantidade de Itens:</label></td><td><input type=\"number\" class=\"gerenciarVendas\" name=\"QuantidadeProdutosVendidos\" id=\"cQuantidadeProdutosVendidos\" min=\"1\" max=\"9999\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cPrecoProdutoVendido\">Preço do Produto:</label></td><td><input type=\"text\" class=\"gerenciarVendas\" name=\"PrecoProdutoVendido\" id=\"cPrecoProdutoVendido\" size=\"30\" maxlength=\"10\" placeholder=\"Valor Unitário, Ex: 25,50\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                            <tr>\n");
+      out.write("                                <td><label for=\"cDataVendaProduto\">Data da Venda:</label></td><td><input type=\"date\" class=\"gerenciarVendas\" name=\"DataVendaProduto\" id=\"cDataVendaProduto\" size=\"30\"/></td>\n");
+      out.write("                            </tr>\n");
+      out.write("                        </table>\n");
+      out.write("                    </fieldset>\n");
+      out.write("                    <input type=\"submit\" value=\"Vender\" id=\"cVender\"/>\n");
+      out.write("                    <input type=\"reset\" value=\"Limpar\" id=\"cLimpar\"/>\n");
+      out.write("\n");
+      out.write("                </form>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <!-- Rodapé da página -->\n");
+      out.write("            <footer id=\"rodape\">\n");
+      out.write("                <br />\n");
+      out.write("                Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />\n");
+      out.write("                Atualizado em 20 de Agosto de 2014\n");
+      out.write("            </footer>\n");
+      out.write("\n");
+      out.write("            <br />\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("    </body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

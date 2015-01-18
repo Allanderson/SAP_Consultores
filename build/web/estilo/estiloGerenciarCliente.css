@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background: #dddddd;
+    font-family: Verdana, Sans-serif;
+}
+
+/*Formatação do corpo da página*/
+#corpo {
+    border-radius: 20px;;
+    width: 1050px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+}
+
+/*Formatação do cabeçalho onde se encontra o nome do sistema*/
+header#cabecalho {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 120px;
+    margin: -10px auto -27px auto;
+    border-bottom: 1px solid #606060;
+
+}
+
+/*Formatação da imagem do logo*/
+header#cabecalho img{
+    width: 80px;
+    border-radius: 10px;
+}
+
+/*Formatação do nome do sistema*/
+nav#nomeLogo h2{
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 30pt;
+    position: relative;
+    left: 85px;
+    top: -95px;							
+}
+nav#nomeLogo h3 {
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 28pt;
+    position: relative;
+    left: 20px;
+    top: -130px;
+}
+
+/*Formatção da tabela de apresentação das boas vindas*/
+header#boasVindas {
+    display: block;
+    position: absolute;
+    font-family: 'FonteLogo', sans-serif;
+    left: 500px;
+    margin-top: -55px; 
+    font-size: 30pt;
+}
+header#boasVindas td {
+    background-color: white;
+}
+
+/*Formatação do botão sair*/
+form#sair input#cSair {
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/*Formatação do menu do gerenciar cliente*/
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+
+}
+nav#inicio ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 175px;
+}
+nav li ul {
+    position: absolute;
+    display: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:#000000;
+    background: #09F;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+}
+nav li:hover ul, li.over ul {
+    display: block;
+}
+nav a:hover{
+    background-color: #606060;											
+    color: #FFF;
+}
+nav#inicio {
+    position: absolute;
+    left: 400px;
+    top: 119px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+nav#gerenciarProduto {
+    position: absolute;
+    left: 575px;
+    top: 119px;
+    text-align: center;
+}
+nav#gerenciarCliente {
+    position: absolute;
+    left: 775px;
+    top: 119px;
+    text-align: center;
+}
+nav#gerenciarVenda{
+    position: absolute;
+    left: 975px;
+    top: 119px;
+    text-align: center;
+}
+/*Formatação da div onde se encontra todo o conteúdo dos clientes*/
+div#conteudoDosClientes h2#listarTodosOsClientes {
+    padding: 10px;
+    background-color: #dddddd;
+    color: #09F;
+    font-size: 20pt;
+    position: relative;
+    top: 30px;
+    width: 980px;    
+    margin: 80px auto auto auto;
+}
+div#conteudoDosClientes h2 {
+    padding: 10px;
+    background-color: #dddddd;
+    color: #09F;
+    font-size: 20pt;
+    position: relative;
+    top: 30px;
+    width: 980px;    
+    margin: auto;
+}
+div#conteudoDosClientes h2#removerCliente {
+    padding: 10px;
+    background-color: #dddddd;
+    color: #09F;
+    font-size: 20pt;
+    position: relative;
+    top: 260px;
+    width: 980px;    
+    margin: auto;
+}
+
+div#conteudoDosClientes h3 {
+    position: relative;
+    padding: 20px;
+    color: #606060;
+    left: 5px;
+}
+/*Formatação dos inputs dos formulários*/
+input.gerenciarCliente{
+    font-size: 13pt;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    margin: 7px;
+}
+/*Formatação do formulário listar clientes (obs: só tem o botao submit)*/
+form#listarClientes input {
+    position: relative;
+    width: 200px;    
+    left: 20px;
+}
+/*Formatação do iframe de apresentação da lista de todos os clientes*/
+iframe {
+    display: block;
+    position: relative;            
+    height: 300px;
+    width: 800px;
+    top: 30px;
+    margin: 0px auto -190px auto;
+    /*border: none;*/
+}
+/*Formatação do formulário remover cliente*/
+form#removerCliente {
+    position: relative;
+   
+}
+form#removerCliente fieldset {
+    width: 800px;
+    height: 375px;
+    margin: 280px auto 0px auto;    
+}
+form#removerCliente legend {
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#removerCliente label{    
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+form#removerCliente input#cRemover {
+    position: relative;
+    left: 260px;
+    height: 40px;
+}
+form#removerCliente input#cVisualizar {
+    position: relative;
+    left: 260px;
+    height: 40px;
+}
+form#removerCliente table#resultadoVisualizar {
+    margin-top: 30px;
+}
+form#removerCliente table#resultadoVisualizar td {
+    padding: 5px;
+    background-color: #dddddd;          
+}
+form#removerCliente table#resultadoVisualizar th {
+    background-color: #606060;
+    color: #FFFFFF;          
+}
+/*Formatação do formulário atualizar cadastro de cliente*/
+form#atualizarCadastroCliente fieldset {
+    width: 800px;
+    height: 400px;
+    margin: auto auto 50px auto;    
+}
+form#atualizarCadastroCliente legend {
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#atualizarCadastroCliente label{    
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+form#atualizarCadastroCliente input#cAtualizar {
+    position: relative;
+    left: 170px;
+    height: 40px;
+}
+form#atualizarCadastroCliente input#cLimpar {
+    position: relative;
+    left: 170px;
+    height: 40px;
+}
+/*Formatação do rodapé*/
+footer#rodape {
+    background-color: #FFF;
+    width: 1000px;
+    height: 50px;
+    margin: 0px auto 10px auto;
+    border-top: 1px solid #606060;	
+    text-align: center;	
+    font-family: Arial, sans-serif;
+    color: #000;															
+}

@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background: #dddddd;
+    font-family: Verdana, Sans-serif;
+}
+
+/*Formatação do corpo da página*/
+#corpo {
+    border-radius: 20px;;
+    width: 1050px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;    
+}
+
+/*Formatação do cabeçalho onde se encontra o nome do sistema*/
+header#cabecalho {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 120px;
+    margin: -10px auto -27px auto;
+    border-bottom: 1px solid #606060;
+
+}
+
+/*Formatação da imagem do logo*/
+header#cabecalho img{
+    width: 80px;
+    border-radius: 10px;
+}
+
+/*Formatação do nome do sistema*/
+nav#nomeLogo h2{
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 30pt;
+    position: relative;
+    left: 85px;
+    top: -95px;							
+}
+nav#nomeLogo h3 {
+    font-family: 'FonteLogo', sans-serif;
+    color: #606060;
+    font-size: 28pt;
+    position: relative;
+    left: 20px;
+    top: -130px;
+}
+
+/*Formatação do cabeçalho inicial acima do album de fotos*/
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    text-indent: 25px;
+}
+header#cabecalho-artigo h2{
+    font-size:13pt;
+    color: #888888;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 45px;
+
+}
+header#cabecalho-artigo h3{
+    font-size:12pt;
+    color: #606060;
+    margin-top: 40px;
+    text-indent: 25px;
+}
+
+/*Formatção da tabela de apresentação das boas viandas*/
+header#boasVindas {
+    display: block;
+    position: absolute;
+    font-family: 'FonteLogo', sans-serif;
+    left: 500px;
+    margin-top: -55px; 
+    font-size: 30pt;
+}
+
+/*Formatação do botão sair*/
+form#sair input#cSair {
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/*Formatação do menu produtos*/
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 160px;
+
+}
+nav#perfumaria ul {
+    width: 185px;
+}
+nav ul li {
+    position: relative;													
+}
+nav li ul {
+    position: absolute;   
+    display: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:#000000;
+    background: #09F;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+}
+nav li:hover ul, li.over ul {
+    display: block;
+}
+nav a:hover{
+    background-color: #606060;											
+    color: #FFF;
+}
+nav#inicio {
+    position: absolute;
+    left: 510px;
+    top: 119px;
+}
+nav#perfumaria {
+    position: absolute;
+    left: 670px;
+    top: 119px;
+}
+nav#corpobanho {
+    position: absolute;
+    left: 855px;
+    top: 119px;
+}
+nav#cabelo {
+    position: absolute;
+    left: 1015px;
+    top: 119px;
+}
+
+/*Formatação do album Cabelo Shampoo*/
+ul#album-cabelo-shampoo {
+    width: 700px;
+    margin: 0px;
+    padding: 50px;
+    /*overflow-hidde;*/
+    list-style: none;
+    margin: 0px auto 0px auto;
+}
+ul#album-cabelo-shampoo li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #fff;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+ul#album-cabelo-shampoo li#shampoo01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li#shampoo09:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cabelo-shampoo li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #000;    
+    font-size: 6pt;
+    font-family: verdana, sans-serif;
+    background-color: rgba(0,0,0,.3);
+    line-height: 370px;
+    padding: 5px; 
+    font-weight: bold;
+}
+ul#album-cabelo-shampoo li:hover span {
+    opacity: 1;
+}
+ul#album-cabelo-shampoo li:hover {
+    -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+}
+ul#album-cabelo-shampoo li {
+    -webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+}
+
+/*Formatação do rodapé*/
+footer#rodape {
+    background-color: #FFF;
+    width: 1000px;
+    height: 50px;
+    margin: 700px auto 10px auto;
+    border-top: 1px solid #606060;	
+    text-align: center;	
+    font-family: Arial, sans-serif;
+    color: #000;															
+}
+
