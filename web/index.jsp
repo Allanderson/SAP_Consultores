@@ -59,21 +59,11 @@
                         </td>
                         <td>
                             <input type="text" class="inputdadospessoais" name="nome" id="cnomecadastro" size="30" maxlength="50" 
-                                   placeholder="Digite seu nome" required = "required" />
+                                   placeholder="Nome Completo" required = "required" />
                         </td>
                         </p>
                         </tr>
-                        <tr>
-                        <p>
-                        <td>
-                            <label for="csobrenome">Sobrenome:</label>
-                        </td>
-                        <td>
-                            <input type="text" class="inputdadospessoais" name="sobrenome" id="csobrenome" size="30" maxlength="50" 
-                                   placeholder="Digite seu sobre nome" required = "required"/>
-                        </td>
-                        </p>
-                        </tr>
+
                         <tr>
                         <p>
                         <td>
@@ -81,21 +71,11 @@
                         </td>
                         <td>
                             <input type="text" class="inputdadospessoais" name="endereco" id="cendereco" size="30" maxlength="100" 
-                                   placeholder="Rua, Av, etc required = "required""/>
+                                   placeholder="Rua, Av, etc" required = "required" />
                         </td>
                         </p>
                         </tr>
-                        <tr>
-                        <p>
-                        <td>
-                            <label for="ccomplemento">Complemento:</label>
-                        </td>
-                        <td>
-                            <input type="text" class="inputdadospessoais" name="complemento" id="ccomplemento" size="30" maxlength="50" 
-                                   placeholder="Ponto de referência"/>
-                        </td>
-                        </p>
-                        </tr>
+
                         <tr>
                         <p>
                         <td>
@@ -142,7 +122,7 @@
                         </tr> 
                     </table>
                     <nav id="botoessubmitcadastro">		
-                        <input type="submit"  value = "Enviar" id="cCadastrar" />
+                        <input type="submit"  value = "Cadastrar" id="cCadastrar" />
                         <input type="reset" value = "Limpar" id="cLimpar" /> 
                     </nav> 
                 </fieldset>

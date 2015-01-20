@@ -85,8 +85,16 @@ form#sair input#cSair {
     position: absolute;
     top: 0px;
     left: 1050px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
+    color: red;
+    font-size: 15px;
     border-radius: 10px;
+    border-top-color: red;
+    border-left-color: red;
+    border-right-color: #09F;
+    border-bottom-color: #09F;    
+    background-color: #ffffff;
 }
 
 /*Formatação do menu produtos*/
