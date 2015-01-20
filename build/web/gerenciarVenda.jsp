@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Gerenciar Venda</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
         <link rel="stylesheet" type="text/css" href = "estilo/estiloGerenciarVenda.css"/>
         <style>
             @font-face{
@@ -90,19 +91,40 @@
                             <legend>Dados Necessários</legend>
                             <table>
                                 <tr>
-                                    <td><label for="cNomeClienteBaixa">Nome do Cliente:</label></td><td><input type="text" class="gerenciarVendas" name="NomeClienteBaixa" id="cNomeClienteBaixa" size="30" maxlength="50"/></td>
+                                    <td>
+									<label for="cNomeClienteBaixa">Nome do Cliente:</label>
+									</td>
+									<td>
+									<input type="text" class="gerenciarVendas" name="NomeClienteBaixa" id="cNomeClienteBaixa" size="30" 
+                                                                               maxlength="50" placeholder="Nome Completo"/>
+									</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+									<label for="cEmailClienteBaixa">Email do Cliente:</label>
+									</td>
+									<td>
+									<input type="email" class="gerenciarVendas" name="EmailClienteBaixa" id="cEmailClienteBaixa" size="30" 
+									maxlength="50"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cSobreNomeClienteBaixa">Sobrenome do Cliente:</label></td><td><input type="text" class="gerenciarVendas" name="SobrenomeClienteBaixa" id="cSobreNomeClienteBaixa" size="30" maxlength="50"/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="cEmailClienteBaixa">Email do Cliente:</label></td><td><input type="email" class="gerenciarVendas" name="EmailClienteBaixa" id="cEmailClienteBaixa" size="30" maxlength="50"/></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="cValorPago">Valor Pago:</label></td><td><input type="text" name="ValorPago" id="cValorPago" class="gerenciarVendas" size="30" maxlength="10" placeholder="Digite o Valor Pago Ex:50,00" /></td>
+                                    <td>
+									<label for="cValorPago">Valor Pago:</label>
+									</td>
+									<td>
+									<input type="text" name="ValorPago" id="cValorPago" class="gerenciarVendas" size="30" maxlength="10" 
+									placeholder="Digite o Valor Pago Ex:50,00" />
+									</td>
                                 </tr>
                                  <tr>
-                                    <td><label for="cDataPagamento">Data do Pagamento:</label></td><td><input type="date" name="DataPagamento" id="cDataPagamento" class="gerenciarVendas" size="30" /></td>
+                                    <td>
+									<label for="cDataPagamento">Data do Pagamento:</label>
+									</td>
+									<td>
+									<input type="date" name="DataPagamento" id="cDataPagamento" class="gerenciarVendas" size="30" />
+									</td>
                                 </tr>
                             </table>
                             <input type="submit" name="tDarBaixa" id="cDarBaixa" value="Dar Baixa"/>
@@ -119,13 +141,21 @@
                             <legend>Dados do Cliente</legend>
                                 <table>
                                     <tr>
-                                        <td><label for="cNomeCliente">Nome do Cliente:</label></td><td><input type="text" class="gerenciarVendas" name="NomeCliente" id="cNomeCliente" size="30" maxlength="50"/></td>
+                                        <td>
+										<label for="cNomeCliente">Nome do Cliente:</label>
+										</td>
+										<td>
+                                                                                    <input type="text" class="gerenciarVendas" name="NomeCliente" id="cNomeCliente" size="30" maxlength="50" placeholder="Nome Completo"/>
+										</td>
                                     </tr>
+
                                     <tr>
-                                        <td><label for="cSobreNomeCliente">Sobrenome do Cliente:</label></td><td><input type="text" class="gerenciarVendas" name="SobrenomeCliente" id="cSobreNomeCliente" size="30" maxlength="50"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="cEmailCliente">Email do Cliente:</label></td><td><input type="email" class="gerenciarVendas" name="EmailCliente" id="cEmailCliente" size="30" maxlength="80"/></td>
+                                        <td>
+										<label for="cEmailCliente">Email do Cliente:</label>
+										</td>
+										<td>
+										<input type="email" class="gerenciarVendas" name="EmailCliente" id="cEmailCliente" size="30" maxlength="80"/>
+										</td>
                                     </tr>
                                 </table>
                         </fieldset>
@@ -134,22 +164,57 @@
                             <legend>Dados Da Venda</legend>
                             <table>
                                 <tr>
-                                    <td><label for="cNomeProdutoVendido">Nome do Produto:</label></td><td><input type="text" class="gerenciarVendas" name="NomeProdutoVendido" id="cNomeProdutoVendido" size="30" maxlength="50"/></td>
+                                    <td>
+									<label for="cNomeProdutoVendido">Nome do Produto:</label>
+									</td>
+									<td>
+									<input type="text" class="gerenciarVendas" name="NomeProdutoVendido" id="cNomeProdutoVendido" size="30" 
+									maxlength="50"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cTipoProdutoVendido">Tipo do Produto:</label></td><td><input type="text" class="gerenciarVendas" name="TipoProdutoVendido" id="cTipoProdutoVendido" size="30" maxlength="50"/></td>
+                                    <td>
+									<label for="cTipoProdutoVendido">Tipo do Produto:</label>
+									</td>
+									<td>
+									<input type="text" class="gerenciarVendas" name="TipoProdutoVendido" id="cTipoProdutoVendido" size="30" 
+									maxlength="50"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cVolumeProdutoVendido">Volume do Produto:</label></td><td><input type="text" class="gerenciarVendas" name="VolumeProdutoVendido" id="cVolumeProdutoVendido" size="30" maxlength="10"/></td>
+                                    <td>
+									<label for="cVolumeProdutoVendido">Volume do Produto:</label>
+									</td>
+									<td>
+									<input type="text" class="gerenciarVendas" name="VolumeProdutoVendido" id="cVolumeProdutoVendido" size="30" 
+									maxlength="10"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cQuantidadeProdutosVendidos">Quantidade de Itens:</label></td><td><input type="number" class="gerenciarVendas" name="QuantidadeProdutosVendidos" id="cQuantidadeProdutosVendidos" min="1" max="9999"/></td>
+                                    <td>
+									<label for="cQuantidadeProdutosVendidos">Quantidade de Itens:</label>
+									</td>
+									<td>
+									<input type="number" class="gerenciarVendas" name="QuantidadeProdutosVendidos" id="cQuantidadeProdutosVendidos" 
+									min="1" max="9999"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cPrecoProdutoVendido">Preço do Produto:</label></td><td><input type="text" class="gerenciarVendas" name="PrecoProdutoVendido" id="cPrecoProdutoVendido" size="30" maxlength="10" placeholder="Valor Unitário, Ex:25,50"/></td>
+                                    <td>
+									<label for="cPrecoProdutoVendido">Preço do Produto:</label>
+									</td>
+									<td>
+									<input type="text" class="gerenciarVendas" name="PrecoProdutoVendido" id="cPrecoProdutoVendido" size="30" 
+									maxlength="10" placeholder="Valor Unitário, Ex:25,50"/>
+									</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cDataVendaProduto">Data da Venda:</label></td><td><input type="date" class="gerenciarVendas" name="DataVendaProduto" id="cDataVendaProduto" size="30"/></td>
+                                    <td>
+									<label for="cDataVendaProduto">Data da Venda:</label>
+									</td>
+									<td>
+									<input type="date" class="gerenciarVendas" name="DataVendaProduto" id="cDataVendaProduto" size="30"/>
+									</td>
                                 </tr>
                             </table>
                         </fieldset>
@@ -162,8 +227,7 @@
                 <%-- Rodapé da página --%>
                 <footer id="rodape">
                     <br />
-                    Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-                    Atualizado em 20 de Agosto de 2014
+                    Copyright &copy; 2014
                 </footer>
                 <br />
 

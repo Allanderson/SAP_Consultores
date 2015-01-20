@@ -31,10 +31,10 @@
             <table>
                 <tr>
                     <td id="bemVindo">
-                        <h1>Olá&nbsp;</h1>  
+                        Olá&nbsp;  
                     </td>
                     <td id="nomeCliente">
-                        <h1><%= session.getAttribute("usuario")%></h1>
+                        <%= session.getAttribute("usuario")%>
                     </td>
                 </tr>
             </table>
@@ -82,9 +82,9 @@
             <div id="pagamento">
                 <table id="pagamento">
                     <tr>
-                        <td><strong>Último Pagamento</strong></td>
-                        <td>14/07/2014</td>
-                        <td>R$ 350,00</td>
+                        <td id="ultimoPagamento"><strong>Último Pagamento</strong></td>
+                        <td id="dataPagamento">14/07/2014</td>
+                        <td id="valorPagamento">R$ 350,00</td>
                     </tr>
                 </table>
             </div>

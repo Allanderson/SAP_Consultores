@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Gerenciar Produto</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
         <link rel="stylesheet" type="text/css" href = "estilo/estiloGerenciarProduto.css"/>
         <style>
             @font-face{
@@ -96,19 +97,46 @@
 
                         <table id="cadastroProduto">
                             <tr>
-                                <td><label for="cNomeProduto">Nome do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="NomeProduto" id="cNomeProduto" size="30" maxlength="80"/></td>
+                                <td>
+								<label for="cNomeProduto">Nome do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="NomeProduto" id="cNomeProduto" size="30" maxlength="80"/>
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cTipoProduto">Tipo do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="TipoProduto" id="cTipoProduto" size="30" maxlength="50"/></td>
+                                <td>
+								<label for="cTipoProduto">Tipo do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="TipoProduto" id="cTipoProduto" size="30" maxlength="50"/>
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cVolumeProduto">Volume do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="VolumeProduto" id="cVolumeProduto" size="30" maxlength="10" placeholder="Ex: 10ml, 40g, 3kg" /></td>
+                                <td>
+								<label for="cVolumeProduto">Volume do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="VolumeProduto" id="cVolumeProduto" size="30" maxlength="10" 
+								placeholder="Ex: 10ml, 40g, 3kg" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cPrecoProduto">Preço do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="PrecoProduto" id="cPrecoProduto" size="30" maxlength="15" placeholder="Ex: 18,75" /></td>
+                                <td>
+								<label for="cPrecoProduto">Preço do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="PrecoProduto" id="cPrecoProduto" size="30" maxlength="15" 
+								placeholder="Ex: 18,75" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cQuantidadeProduto">Quantidade de Produtos:</label></td><td><input type="number" class="gerenciarProduto" name="QuantidadeProduto" id="cQuantidadeProduto" min="1" max="9999" /></td>
+                                <td>
+								<label for="cQuantidadeProduto">Quantidade de Produtos:</label>
+								</td>
+								<td>
+								<input type="number" class="gerenciarProduto" name="QuantidadeProduto" id="cQuantidadeProduto" min="1" max="9999" />
+								</td>
                             </tr>
                         </table>    
                         <td><input type="submit" value =" Cadastrar Produto" id="cCadastrarProduto" /></td>                               
@@ -127,13 +155,31 @@
 
                         <table id="verificarEstoque">
                             <tr>
-                                <td><label for="cNomeProdutoEstoque">Nome do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tNomeProdutoEstoque" id="cNomeProdutoEstoque" size="30" maxlength="80"/></td>
+                                <td>
+								<label for="cNomeProdutoEstoque">Nome do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tNomeProdutoEstoque" id="cNomeProdutoEstoque" size="30" 
+								maxlength="80"/>
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cTipoProdutoEstoque">Tipo do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tTipoProdutoEstoque" id="cTipoProdutoEstoque" size="30" maxlength="50" /></td>
+                                <td>
+								<label for="cTipoProdutoEstoque">Tipo do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tTipoProdutoEstoque" id="cTipoProdutoEstoque" size="30" 
+								maxlength="50" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cVolumeProdutoEstoque">Volume do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tVolumeProdutoEstoque" id="cVolumeProdutoEstoque" size="30" maxlength="15"/></td>
+                                <td>
+								<label for="cVolumeProdutoEstoque">Volume do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tVolumeProdutoEstoque" id="cVolumeProdutoEstoque" size="30" 
+								maxlength="15"/>
+								</td>
                             </tr>                             
                         </table>
 
@@ -217,13 +263,31 @@
                         <legend>Remova Aqui Seus Produtos</legend>
                         <table id="removerProduto">
                             <tr>
-                                <td><label for="cNomeProdutoRemove">Nome do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tNomeProdutoRemove" id="cNomeProdutoRemove" size="30" maxlength="80" /></td>
+                                <td>
+								<label for="cNomeProdutoRemove">Nome do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tNomeProdutoRemove" id="cNomeProdutoRemove" size="30" 
+								maxlength="80" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cTipoProdutoRemove">Tipo do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tTipoProdutoRemove" id="cTipoProdutoRemove" size="30" maxlength="50" /></td>
+                                <td>
+								<label for="cTipoProdutoRemove">Tipo do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tTipoProdutoRemove" id="cTipoProdutoRemove" size="30" 
+								maxlength="50" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cVolumeProdutoRemove">Volume do Produto:</label></td><td><input type="text" class="gerenciarProduto" name="tVolumeProdutoRemove" id="cVolumeProdutoRemove" size="30" maxlength="15" /></td>
+                                <td>
+								<label for="cVolumeProdutoRemove">Volume do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="tVolumeProdutoRemove" id="cVolumeProdutoRemove" size="30" 
+								maxlength="15" />
+								</td>
                             </tr>
                         </table>
 
@@ -236,8 +300,7 @@
             <%-- Rodapé da página --%>
             <footer id="rodape">
                 <br />
-                Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-                Atualizado em 20 de Agosto de 2014
+                Copyright &copy; 2014
             </footer>
             <br />
 

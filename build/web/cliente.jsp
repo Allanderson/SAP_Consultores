@@ -4,6 +4,7 @@
 <html lang = "pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
 <link rel="stylesheet" type="text/css" href = "estilo/estilocliente.css"/>
 <title>Área do Cliente</title>
 
@@ -30,10 +31,10 @@
             <table>
                 <tr>
                     <td id="bemVindo">
-                        <h1>Olá&nbsp;</h1>  
+                        Olá&nbsp;  
                     </td>
                     <td id="nomeCliente">
-                        <h1><%= session.getAttribute("usuario")%></h1>
+                        <%= session.getAttribute("usuario")%>
                     </td>
                 </tr>
             </table>
@@ -81,9 +82,9 @@
             <div id="pagamento">
                 <table id="pagamento">
                     <tr>
-                        <td><strong>Último Pagamento</strong></td>
-                        <td>14/07/2014</td>
-                        <td>R$ 350,00</td>
+                        <td id="ultimoPagamento"><strong>Último Pagamento</strong></td>
+                        <td id="dataPagamento">14/07/2014</td>
+                        <td id="valorPagamento">R$ 350,00</td>
                     </tr>
                 </table>
             </div>
@@ -134,8 +135,7 @@
         <%-- Rodapé da página --%>
 	<footer id="rodape">
             <br />
-            Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-            Atualizado em 20 de Agosto de 2014
+            Copyright &copy; 2014
 	</footer>
         
 	<br />

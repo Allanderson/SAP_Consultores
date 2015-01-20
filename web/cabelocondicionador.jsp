@@ -91,7 +91,7 @@ ul#album-cabelo-condicionador li#condicionador09 {
              <table>
                 <tr>
                     <td id="bemVindo">
-                        Olá!&nbsp; 
+                        Olá&nbsp; 
                     </td>
                     <td id="nomeCliente">
                         

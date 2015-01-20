@@ -5,7 +5,8 @@
 <html lang= "pt-br">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Erro no Processo</title>        
+        <title>Erro no Processo</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />        
         <style>
             @font-face{
                 font-family: 'FonteLogo';
@@ -111,8 +112,7 @@
                 <%-- Rodapé da página --%>
                 <footer id="rodape">
                     <br />
-                    Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-                    Atualizado em 20 de Agosto de 2014
+                    Copyright &copy; 2014
                 </footer>
                 <br />
 

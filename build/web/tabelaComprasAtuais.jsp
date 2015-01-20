@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
         <style>
             table td {
                 padding: 10px;

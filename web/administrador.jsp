@@ -43,7 +43,7 @@
             <!-- Botão sair do sistema -->            
             <header id="botaoSair">
                 <form id="sair" action="Logoff" method="post">
-                    <input type="submit" name="tSair" id="cSair" value="sair"/>
+                    <input type="submit" name="tSair" id="cSair" value="Sair"/>
                 </form>
             </header>
 
@@ -108,18 +108,10 @@
                             </td>
                             <td>
                                 <input type="text" class="gerenciarVendas" name="NomeClienteBaixa" id="cNomeClienteBaixa" 
-                                       size="30" maxlength="50"/>
+                                       size="30" maxlength="50" placeholder="Nome Completo"/>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <label for="cSobreNomeClienteBaixa">Sobrenome do Cliente:</label>
-                            </td>
-                            <td>
-                                <input type="text" class="gerenciarVendas" name="SobrenomeClienteBaixa" 
-                                       id="cSobreNomeClienteBaixa" size="30" maxlength="50"/>
-                            </td>
-                        </tr>
+                       
                         <tr>
                             <td>
                                 <label for="cEmailClienteBaixa">Email do Cliente:</label>
@@ -164,17 +156,10 @@
 								<label for="cNomeCliente">Nome do Cliente:</label>
 								</td>
 								<td>
-								<input type="text" class="gerenciarVendas" name="NomeCliente" id="cNomeCliente" size="30" maxlength="50"/>
+                                                                    <input type="text" class="gerenciarVendas" name="NomeCliente" id="cNomeCliente" size="30" maxlength="50" placeholder="Nome Completo"/>
 								</td>
                             </tr>
-                            <tr>
-                                <td>
-								<label for="cSobreNomeCliente">Sobrenome do Cliente:</label>
-								</td>
-								<td>
-								<input type="text" class="gerenciarVendas" name="SobrenomeCliente" id="cSobreNomeCliente" size="30" maxlength="50"/>
-								</td>
-                            </tr>
+
                             <tr>
                                 <td>
 								<label for="cEmailCliente">Email do Cliente:</label>
