@@ -135,7 +135,7 @@
                             </tr>
                         </table>    
                         <td><input type="submit" value =" Cadastrar Produto" id="cCadastrarProduto" /></td>                               
-                        <td><input type="reset"  value = "Restaurar Campos" id="cLimparCampo" /></td>                                
+                        <td><input type="reset"  value = "Limpar Campos" id="cLimparCampo" /></td>                                
 
                     </fieldset>
                 </form>
@@ -146,8 +146,35 @@
 
                 <form id="verificarEstoque" method="post" action="visualizarProdutos.jsp">
                     <fieldset>
-                        <legend>Verifique Aqui o Estoque dos Produtos</legend>
-
+                        <legend>Verifique Aqui o Estoque dos seus Produtos</legend>
+                        
+                        <table id="verificarProduto">
+                            <tr>
+                                <td>
+								<label for="cNomeProdutoVerifica">Nome do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="NomeProdutoVerifica" id="cNomeProdutoVerifica" size="30" maxlength="80" />
+								</td>
+                            </tr>
+                            <tr>
+                                <td>
+								<label for="cTipoProdutoVerifica">Tipo do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="TipoProdutoVerifica" id="cTipoProdutoVerifica" size="30" maxlength="50" />
+								</td>
+                            </tr>
+                            <tr>
+                                <td>
+								<label for="cVolumeProdutoVerifica">Volume do Produto:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarProduto" name="VolumeProdutoVerifica" id="cVolumeProdutoVerifica" size="30" 
+								maxlength="15" />
+								</td>
+                            </tr>
+                        </table>
 
                         <input type="submit" name="tPesquisar" id="cPesquisar" value="Pesquisar"/>
 

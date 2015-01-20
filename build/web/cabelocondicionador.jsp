@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cabelo Condicionador</title>
+<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
 <link rel="stylesheet" type="text/css" href = "estilo/estilocondicionador.css"/>
 <style>
     @font-face{
@@ -90,7 +91,7 @@ ul#album-cabelo-condicionador li#condicionador09 {
              <table>
                 <tr>
                     <td id="bemVindo">
-                        Olá!&nbsp; 
+                        Olá&nbsp; 
                     </td>
                     <td id="nomeCliente">
                         
@@ -180,8 +181,7 @@ ul#album-cabelo-condicionador li#condicionador09 {
         <%-- Rodapé da página --%>
         <footer id="rodape">
             <br />
-            Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-            Atualizado em 20 de Agosto de 2014
+            Copyright &copy; 2014
         </footer>
        
         <br />

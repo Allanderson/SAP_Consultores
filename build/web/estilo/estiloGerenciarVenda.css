@@ -66,8 +66,16 @@ form#sair input#cSair {
     position: absolute;
     top: 0px;
     left: 1050px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
+    color: red;
+    font-size: 15px;
     border-radius: 10px;
+    border-top-color: red;
+    border-left-color: red;
+    border-right-color: #09F;
+    border-bottom-color: #09F;    
+    background-color: #ffffff;
 }
 
 /*Formatação do menu do gerenciar venda*/
@@ -174,7 +182,7 @@ form#darBaixaVenda label{
 }
 form#darBaixaVenda fieldset {
     width: 800px;
-    height: 340px;
+    height: 320px;
     margin: auto;
 }
 form#darBaixaVenda legend {
@@ -183,8 +191,12 @@ form#darBaixaVenda legend {
 }
 form#darBaixaVenda input#cDarBaixa {
     position: relative;
-    left: 248px;
+    left: 228px;
     height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+    background-color: #888888;
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -213,6 +225,10 @@ form#vender input#cVender, input#cLimpar{
     position: relative;
     left: 360px;
     height: 40px;
+    width: 90px;
+    color: white;
+    background-color: #888888;
+    border-radius: 10px;
     margin-bottom: 50px;
     margin-top: 10px;
     

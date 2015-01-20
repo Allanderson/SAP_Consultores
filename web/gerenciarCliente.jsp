@@ -88,7 +88,8 @@
                 <h3>Ao Clicar em <u>"Listar Cliente"</u> Será Exibida Uma<br/>&emsp;Lista Com Todos os Seus Clientes</h3>
 
                 <form id="listarClientes" method="post" >
-                    <input type="image" src="imagens/listarClientes.jpg" name="tListarClientes" id="cListarClientes"/>
+                    <input type="submit" name="tListarClientes" id="cListarClientes" value="Listar Clientes" />
+                    <%--<input type="image" src="imagens/listarClientes.jpg" name="tListarClientes" id="cListarClientes"/> --%>
 
 
                     <iframe src="tabelaComClientes.jsp" name="janela" id="frame-listarClientes"></iframe>
@@ -105,18 +106,10 @@
 								<label for="cNomeClienteRemove">Nome do Cliente:</label>
 								</td>
 								<td>
-								<input type="text" class="gerenciarCliente" name="NomeClienteRemover" id="cNomeClienteRemove" size="30" maxlength="80" />
+								<input type="text" class="gerenciarCliente" name="NomeClienteRemover" id="cNomeClienteRemove" size="30" maxlength="80" placeholder="Nome Completo"/>
 								</td>
                             </tr>
-                            <tr>
-                                <td>
-								<label for="cSobreNomeClienteRemove">Sobrenome do Cliente:</label>
-								</td>
-								<td>
-								<input type="text" class="gerenciarCliente" name="SobrenomeClienteRemover" id="cSobreNomeClienteRemove" size="30" 
-								maxlength="50" />
-								</td>
-                            </tr>
+
                             <tr>
                                 <td>
 								<label for="cEmailClienteRemove">Email do Cliente:</label>

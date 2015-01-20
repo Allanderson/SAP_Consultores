@@ -96,9 +96,9 @@ legend#dadospessoais {
     font-family: sans-serif;
 }
 fieldset#dadospessoais {											
-    margin: 60px auto 50px auto;
-    width: 700px;
-    height: 380px;
+    margin: 45px auto 40px auto;
+    width: 600px;
+    height: 300px;
 }
 fieldset#dadospessoais label{
     font-size: 14pt;
@@ -107,14 +107,22 @@ fieldset#dadospessoais label{
 }
 input#ccadastrar {
     position: relative;
-    height: 35px;
+    height: 40px;
+    width: 90px;
     left: 195px;
+    background: #888888;
+    color: white;
+    border-radius: 10px;
     margin-top: 5px;
 
 }
 input#climpar {
     position: relative;
-    height: 35px;
+    height: 40px;
+    width: 90px;
+    background-color: #888888;
+    color: white;
+    border-radius: 10px;
     left: 195px;
     margin-top: 5px;
 }

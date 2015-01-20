@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Confirmação de Cadastro</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
         <style>
             
             @font-face{
@@ -123,8 +124,10 @@
 
             <!--Formuláro de entrada no sistema falta colocar a ação do formulário-->
             <form id="formEntrar" method="post" action="LoginAdministrador">
-                <label for="cemailentrar">Email:&nbsp;</label><input type="email" name="temailentrar" id="cemailentrar" size="20" maxlength="50" />&nbsp;
-                <label for="csenhaentrar">Senha:&nbsp;</label><input type="password" name="tsenhaentrar" id="csenhaentrar" size="20" maxlength="15"/>&nbsp;
+                <label for="cemailentrar">Email:&nbsp;</label>
+				<input type="email" name="temailentrar" id="cemailentrar" size="20" maxlength="50" />&nbsp;
+                <label for="csenhaentrar">Senha:&nbsp;</label>
+				<input type="password" name="tsenhaentrar" id="csenhaentrar" size="20" maxlength="15"/>&nbsp;
                 <input type="image" src="imagens/botao_entrar.png" id="centrar" />
             </form>
             
@@ -137,8 +140,7 @@
             <%-- Rodapé da página --%>
             <footer id="rodape">
                 <br />
-                Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-                Atualizado em 20 de Agosto de 2014
+                Copyright &copy; 2014
             </footer>
             <br />
 

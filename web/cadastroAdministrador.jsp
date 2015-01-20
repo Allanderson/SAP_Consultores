@@ -51,18 +51,7 @@
 								</td>
 								<td>
 								<input type="text" class="inputdadospesoais" name="nome" id="cnomecadastro" size="30" maxlength="50" 
-								placeholder="Digite seu nome"  required = "required"/>
-								</td>
-								</p>
-                            </tr>
-                            <tr>
-                                <p>
-								<td>
-								<label for="csobrenome">Sobrenome:</label>
-								</td>
-								<td>
-								<input type="text" class="inputdadospesoais" name="sobrenome" id="csobrenome" size="30" maxlength="50" 
-								placeholder="Digite seu sobre nome" required = "required"/>
+								placeholder="Digite o seu nome Completo"  required = "required"/>
 								</td>
 								</p>
                             </tr>
@@ -102,7 +91,7 @@
                             </tr> 
                         </table>
                         <nav id="botoessubmitcadastro">		
-                            <input type="submit" value = "Enviar" id="ccadastrar" />
+                            <input type="submit" value = "Cadastrar" id="ccadastrar" />
                             <input type="reset" value = "Limpar" id="climpar" /> 
                         </nav> 
                     </fieldset>

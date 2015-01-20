@@ -4,6 +4,7 @@
     font-family: 'FonteLogo';
     src:url(fonte/bubblegum-sans-regular.otf);
 }
+
 body{
     background: #dddddd;
     font-family: Verdana, Sans-serif;
@@ -11,7 +12,7 @@ body{
 
 /*Formatação do corpo da página*/
 #corpo {
-    border-radius: 20px;;
+    border-radius: 20px;
     width: 1050px;
     margin: 0px auto 0px auto;
     background-color: #FFFFFF;
@@ -68,8 +69,16 @@ form#sair input#cSair {
     position: absolute;
     top: 0px;
     left: 1050px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
+    color: red;
+    font-size: 15px;
     border-radius: 10px;
+    border-top-color: red;
+    border-left-color: red;
+    border-right-color: #09F;
+    border-bottom-color: #09F;    
+    background-color: #ffffff;
 }
 
 /*Formatatacão do menu principal compras*/
@@ -90,7 +99,7 @@ li ul {
 ul li a {
     display: block;
     text-decoration: none;
-    color:#000000;
+    color: #000000;
     background: #09F;
     padding: 10px;
     border: 1px solid #ccc;
@@ -99,7 +108,7 @@ ul li a {
 li:hover ul, li.over ul {
     display: block;
 }
-a:hover{
+a:hover {
     background-color: #606060;											
     color: #FFF;
 }
@@ -119,7 +128,7 @@ section#areacompras {
     display: block;
     border-right: 1px solid #606060;
     width: 408px;
-    margin:0px;
+    margin: 0px;
 }
 
 /*Formatação da tabela que apresenta o valor da dívida do cliente*/
@@ -128,16 +137,16 @@ div#divida {
     left: 20px;
 }
 table td#mdivida, td#valor {
-    padding:5px;
+    padding: 5px;
     background-color: #cecece;
 }
 
 /*Formatação da tabela que apresenta o último pagamento*/
 div#pagamento {
     position: relative;
-    left:20px;
+    left: 20px;
 }
-table td {
+table td#ultimoPagamento, td#dataPagamento, td#valorPagamento {
     padding: 5px;
     background-color: #cecece;
 }

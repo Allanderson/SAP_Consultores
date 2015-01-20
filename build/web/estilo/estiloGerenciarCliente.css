@@ -66,8 +66,16 @@ form#sair input#cSair {
     position: absolute;
     top: 0px;
     left: 1050px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
+    color: red;
+    font-size: 15px;
     border-radius: 10px;
+    border-top-color: red;
+    border-left-color: red;
+    border-right-color: #09F;
+    border-bottom-color: #09F;    
+    background-color: #ffffff;
 }
 
 /*Formatação do menu do gerenciar cliente*/
@@ -178,8 +186,13 @@ input.gerenciarCliente{
 /*Formatação do formulário listar clientes (obs: só tem o botao submit)*/
 form#listarClientes input {
     position: relative;
-    width: 200px;    
+    width: 200px; 
+    height: 40px;
+    border-radius: 10px;
+    background-color: #888888;
+    color: white;
     left: 20px;
+    font-size: 15pt;
 }
 /*Formatação do iframe de apresentação da lista de todos os clientes*/
 iframe {
@@ -198,7 +211,7 @@ form#removerCliente {
 }
 form#removerCliente fieldset {
     width: 800px;
-    height: 375px;
+    height: 200px;
     margin: 280px auto 0px auto;    
 }
 form#removerCliente legend {
@@ -212,14 +225,14 @@ form#removerCliente label{
 }
 form#removerCliente input#cRemover {
     position: relative;
-    left: 260px;
+    left: 195px;
     height: 40px;
+    width: 90px;
+    background-color: #888888;
+    color: white;
+    border-radius: 10px;
 }
-form#removerCliente input#cVisualizar {
-    position: relative;
-    left: 260px;
-    height: 40px;
-}
+
 form#removerCliente table#resultadoVisualizar {
     margin-top: 30px;
 }
@@ -234,7 +247,7 @@ form#removerCliente table#resultadoVisualizar th {
 /*Formatação do formulário atualizar cadastro de cliente*/
 form#atualizarCadastroCliente fieldset {
     width: 800px;
-    height: 400px;
+    height: 350px;
     margin: auto auto 50px auto;    
 }
 form#atualizarCadastroCliente legend {
@@ -248,13 +261,21 @@ form#atualizarCadastroCliente label{
 }
 form#atualizarCadastroCliente input#cAtualizar {
     position: relative;
-    left: 170px;
+    left: 165px;
     height: 40px;
+    width: 90px;
+    color: white;
+    background-color: #888888;
+    border-radius: 10px;
 }
 form#atualizarCadastroCliente input#cLimpar {
     position: relative;
-    left: 170px;
+    left: 165px;
     height: 40px;
+    width: 90px;
+    color: white;
+    background-color: #888888;
+    border-radius: 10px;
 }
 /*Formatação do rodapé*/
 footer#rodape {

@@ -215,9 +215,13 @@ ul#album-perfumaria-jovensecrianca li:hover span {
 
 ul#album-perfumaria-jovensecrianca li:hover {
     -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
 }
 ul#album-perfumaria-jovensecrianca li {
     -webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
 }
 
 /*Formatação do rodapé*/

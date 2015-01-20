@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Gerenciar Cliente</title>
+		<link rel = "shortcut icon" href = "imagens/libelula.jpg" />
         <link rel="stylesheet" type="text/css" href = "estilo/estiloGerenciarCliente.css"/>
         <style>
             @font-face{
@@ -87,7 +88,8 @@
                 <h3>Ao Clicar em <u>"Listar Cliente"</u> Será Exibida Uma<br/>&emsp;Lista Com Todos os Seus Clientes</h3>
 
                 <form id="listarClientes" method="post" >
-                    <input type="image" src="imagens/listarClientes.jpg" name="tListarClientes" id="cListarClientes"/>
+                    <input type="submit" name="tListarClientes" id="cListarClientes" value="Listar Clientes" />
+                    <%--<input type="image" src="imagens/listarClientes.jpg" name="tListarClientes" id="cListarClientes"/> --%>
 
 
                     <iframe src="tabelaComClientes.jsp" name="janela" id="frame-listarClientes"></iframe>
@@ -100,13 +102,21 @@
                         <legend>Remova Aqui Seus Clientes</legend>
                         <table id="removerCliente">
                             <tr>
-                                <td><label for="cNomeClienteRemove">Nome do Cliente:</label></td><td><input type="text" class="gerenciarCliente" name="NomeClienteRemover" id="cNomeClienteRemove" size="30" maxlength="80" /></td>
+                                <td>
+								<label for="cNomeClienteRemove">Nome do Cliente:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarCliente" name="NomeClienteRemover" id="cNomeClienteRemove" size="30" maxlength="80" placeholder="Nome Completo"/>
+								</td>
                             </tr>
+
                             <tr>
-                                <td><label for="cSobreNomeClienteRemove">Sobrenome do Cliente:</label></td><td><input type="text" class="gerenciarCliente" name="SobrenomeClienteRemover" id="cSobreNomeClienteRemove" size="30" maxlength="50" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="cEmailClienteRemove">Email do Cliente:</label></td><td><input type="email" class="gerenciarCliente" name="EmailClienteRemover" id="cEmailClienteRemove" size="30" maxlength="80" /></td>
+                                <td>
+								<label for="cEmailClienteRemove">Email do Cliente:</label>
+								</td>
+								<td>
+								<input type="email" class="gerenciarCliente" name="EmailClienteRemover" id="cEmailClienteRemove" size="30" maxlength="80" />
+								</td>
                             </tr>
                         </table>
 
@@ -125,19 +135,44 @@
                         <legend>Atualize o Cadastro do Seu Cliente</legend>
                         <table id="atualizarCadastroCliente">
                             <tr>
-                                <td><label for="cNomeCliente">Identificador:</label></td><td><input type="number" class="gerenciarCliente" name="NomeCliente" id="cNomeCliente" size="30" maxlength="80"/></td>
+                                <td>
+								<label for="cNomeCliente">Identificador:</label>
+								</td>
+								<td>
+								<input type="number" class="gerenciarCliente" name="NomeCliente" id="cNomeCliente" size="30" maxlength="80"/>
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cEnderecoCliente">Endereço:</label></td><td><input type="text" class="gerenciarCliente" name="EnderecoCliente" id="cEnderecoCliente" size="30" maxlength="80"  /></td>
+                                <td>
+								<label for="cEnderecoCliente">Endereço:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarCliente" name="EnderecoCliente" id="cEnderecoCliente" size="30" maxlength="80"  />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cComplementoCliente">Complemento:</label></td><td><input type="text" class="gerenciarCliente" name="ComplementoCliente" id="cComplementoCliente" size="30" maxlength="50" /></td>
+                                <td>
+								<label for="cComplementoCliente">Complemento:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarCliente" name="ComplementoCliente" id="cComplementoCliente" size="30" maxlength="50" />
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cTelefoneCliente">Telefone:</label></td><td><input type="text" class="gerenciarCliente" name="TelefoneCliente" id="cTelefoneCliente" size="30" maxlength="15"/></td>
+                                <td>
+								<label for="cTelefoneCliente">Telefone:</label>
+								</td>
+								<td>
+								<input type="text" class="gerenciarCliente" name="TelefoneCliente" id="cTelefoneCliente" size="30" maxlength="15"/>
+								</td>
                             </tr>
                             <tr>
-                                <td><label for="cEmailCliente">Email:</label></td><td><input type="email" class="gerenciarCliente" name="EmailCliente" id="cEmailCliente" size="30" maxlength="80"/></td>
+                                <td>
+								<label for="cEmailCliente">Email:</label>
+								</td>
+								<td>
+								<input type="email" class="gerenciarCliente" name="EmailCliente" id="cEmailCliente" size="30" maxlength="80"/>
+								</td>
                             </tr>
                         </table>                       
                         <input type="submit"  value ="Atualizar" id="cAtualizar" />
@@ -150,8 +185,7 @@
             <%-- Rodapé da página --%>
             <footer id="rodape">
                 <br />
-                Copyright &copy; 2014 - by Allanderson, Aziclévio e João Paulo<br />
-                Atualizado em 20 de Agosto de 2014
+                Copyright &copy; 2014
             </footer>
             <br />
 

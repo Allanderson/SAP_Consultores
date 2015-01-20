@@ -66,8 +66,16 @@ form#sair input#cSair {
     position: absolute;
     top: 0px;
     left: 1050px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
+    color: red;
+    font-size: 15px;
     border-radius: 10px;
+    border-top-color: red;
+    border-left-color: red;
+    border-right-color: #09F;
+    border-bottom-color: #09F;    
+    background-color: #ffffff;
 }
 
 /*Formatação do menu do gerenciar produto*/
@@ -181,24 +189,28 @@ form#cadastroProduto label{
 }
 form#cadastroProduto input#cCadastrarProduto {
     position: relative;
-    left: 170px;
+    left: 275px;
     height: 40px;
+    width: 130px;
+    background-color: #888888;
+    border-radius: 10px;
+    color: white;
 }
-form#cadastroProduto input#cAtualizarProduto {
-    position: relative;
-    left: 170px;
-    height: 40px;
-}
+
 form#cadastroProduto input#cLimparCampo {
     position: relative;
-    left: 170px;
+    left: 275px;
     height: 40px;
+    width: 130px;
+    background-color: #888888;
+    border-radius: 10px;
+    color: white;;
 }
 
 /*Formatação do formulário verificar estoque do produto*/
 form#verificarEstoque fieldset {
     width: 800px;
-    height: 350px;
+    height: 400px;
     margin: auto;
 }
 form#verificarEstoque legend {
@@ -214,11 +226,16 @@ form#verificarEstoque input#cPesquisar {
     position: relative;
     left: 220px;
     height: 40px;
+    width: 120px;
+    background-color: #888888;
+    border-radius: 10px;
+    color: white;
+    font-size: 13pt;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 form#verificarEstoque table#resultadoPesquisa{
-    width: 400px;
+    width: 800px;
 }
 form#verificarEstoque table#resultadoPesquisa td {
     padding: 5px;
@@ -233,7 +250,7 @@ form#verificarEstoque table#resultadoPesquisa th {
 /*Formatação do formulário remover produto*/
 form#removerProduto fieldset {
     width: 800px;
-    height: 375px;
+    height: 230px;
     margin: auto auto 50px auto;    
 }
 form#removerProduto legend {
@@ -249,22 +266,10 @@ form#removerProduto input#cRemover {
     position: relative;
     left: 220px;
     height: 40px;
-}
-form#removerProduto input#cVisualizar {
-    position: relative;
-    left: 220px;
-    height: 40px;
-}
-form#removerProduto table#resultadoVisualizar {
-    margin-top: 30px;
-}
-form#removerProduto table#resultadoVisualizar td {
-    padding: 5px;
-    background-color: #dddddd;          
-}
-form#removerProduto table#resultadoVisualizar th {
-    background-color: #606060;
-    color: #FFFFFF;          
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+    background-color: #888888;
 }
 
 /*Formatação do rodapé*/
