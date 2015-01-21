@@ -59,7 +59,7 @@
                 top: -130px;
             }
 
-            /*Formatação da mensagem de agradeciomento do cadastro*/
+            /*Formatação da mensagem de erro ao entrar*/
             header#aviso h1 {
                 text-align: center;
                 font-family:Arial;
@@ -71,9 +71,16 @@
             header#aviso h2 {
                 text-align: center;
                 font-family:Arial;
-                font-size:30pt;
-                color: blue;
-                text-shadow: 2px 2px 2px black;
+                font-size:20pt;
+                color: #888888;
+                /*text-shadow: 2px 2px 2px black;*/
+            }
+            /*Formatação do link Voltar*/
+            header#aviso a {
+                color: red;
+                text-align: center;
+                font-family:Arial;
+                font-size:20pt;
             }
 
             /*Formatação do rodapé*/
@@ -101,12 +108,13 @@
                         <h2>SAP</h2>
                         <h3> Consultores </h3>
                     </nav>
-                </header>
-
+                </header>               
+                              
                 <%-- Mensagem de erro no cadastro --%>
                 <header id="aviso">   
-                    <h1>Ocorreu Um Erro Ao Tentar Entrar No Sistema!</h1>    
-                    <h2>Verifique se os Dados Inseridos Estão Corretos!</h2>
+                    <h1>Ocorreu Um Erro!</h1>    
+                    <h2>Verifique se os Dados Inseridos Estão Corretos.<br /> </h2>
+                        <h2>Para voltar Click <a href="index.jsp">Aqui</a> </h2>
                 </header>
 
                 <%-- Rodapé da página --%>
