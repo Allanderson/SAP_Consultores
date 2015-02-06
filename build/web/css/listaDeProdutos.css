@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#listaProdutos {
+    display: block;
+    position: relative;
+    top: 125px;
+    width: 650px;
+}
+table#listaProdutos {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    width: 650px;
+    margin-bottom: 160px;
+}
+table#listaProdutos td {
+    padding: 10px;
+    background-color: #dddddd;
+    text-align: center;
+}
+table#listaProdutos th {
+    background-color: #606060;
+    color: #FFFFFF;
+}
+a#novoCadastro {
+    color: #09F;
+    display: block;
+    position: relative;
+    left: 25px;
+    top: 15px;
+    text-decoration: none;
+}
+table#listaProdutos a img {
+    width: 20px;
+    height: 20px;
+}
+/* Formatação do formulário de pesquisa*/
+
+form#pesquisar {
+    display: block;
+    position: relative;
+    left: 25px;
+    color: #888888;
+    width: 500px;
+}
+form#pesquisar label {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #606060;
+}
+input#cPesquisar {
+    width: 30px;
+    height: 30px;
+}
