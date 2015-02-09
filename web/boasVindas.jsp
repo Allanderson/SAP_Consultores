@@ -6,7 +6,7 @@
                             <script>saudacao();</script>&nbsp;  
                         </td>
                         <td id="nomeCliente">
-                            <%= session.getAttribute("usuario")%>
+                            <%= session.getAttribute("nome")%>
                         </td>
                     </tr>
                 </table>            

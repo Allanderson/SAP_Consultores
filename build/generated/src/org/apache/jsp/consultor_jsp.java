@@ -51,43 +51,47 @@ public final class consultor_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
       if (_jspx_meth_c_import_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("    <title>Consultor</title>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas.css\"/>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/menuConsultor.css\"/>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/relatorioVendas.css\"/>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/sair.css\"/>\n");
+      out.write("\r\n");
+      out.write("<title>Consultor</title>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/menuConsultor.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/relatorioVendas.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/sair.css\"/>\r\n");
       if (_jspx_meth_c_import_1(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_2(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_3(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_4(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("            <nav id=\"tabelaRelatoriosDeVenda\">\n");
-      out.write("                <h1>Relatório das Vendas</h1>\n");
-      out.write("                <table id=\"tabelaRelatorio\">\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td><strong>Valor a Receber:</strong></td>\n");
-      out.write("                        <td><strong>R$ 157,00</strong></td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td><strong>Valor Total Vendido:</strong></td>\n");
-      out.write("                        <td><strong>R$ 315,00</strong></td>\n");
-      out.write("                    </tr>\n");
-      out.write("                </table>                \n");
-      out.write("            </nav>\n");
+      out.write("\r\n");
+      out.write("<nav id=\"tabelaRelatoriosDeVenda\">\r\n");
+      out.write("    <h1>Relatório das Vendas</h1>\r\n");
+      out.write("    <table id=\"tabelaRelatorio\">\r\n");
+      out.write("        <tr>\r\n");
+      out.write("            <td><strong>Valor a Receber:</strong></td>\r\n");
+      out.write("            <td><strong>R$ 157,00</strong></td>\r\n");
+      out.write("        </tr>\r\n");
+      out.write("        <tr>\r\n");
+      out.write("            <td><strong>Valor Total Vendido:</strong></td>\r\n");
+      out.write("            <td><strong>R$ 315,00</strong></td>\r\n");
+      out.write("        </tr>\r\n");
+      out.write("    </table>                \r\n");
+      out.write("</nav>\r\n");
       if (_jspx_meth_c_import_5(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

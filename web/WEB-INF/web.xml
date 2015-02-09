@@ -4,9 +4,25 @@
         <servlet-name>Logar</servlet-name>
         <servlet-class>br.com.sap.all.jp.servlets.controller.Logar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletLogar</servlet-name>
+        <servlet-class>servlets.ServletLogar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletSair</servlet-name>
+        <servlet-class>servlets.ServletSair</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Logar</servlet-name>
         <url-pattern>/Logar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletLogar</servlet-name>
+        <url-pattern>/ServletLogar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletSair</servlet-name>
+        <url-pattern>/ServletSair</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

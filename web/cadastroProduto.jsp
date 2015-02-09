@@ -19,10 +19,6 @@
         <fieldset id="formularios">
             <table id="formularios">
                 <tr>
-                    <td><label for="cCodigoConsultor">Código Do Consultor:</label></td> 
-                    <td><input type="text" required="true" autofocus="" class="formularios" name="tCodigoConsultor" id="cCodigoConsultor" placeholder="Código do Consultor"/></td>
-                </tr>
-                <tr>
                     <td><label for="cCodigoProduto">Código do Produto</label></td>
                     <td><input type="text" required="true" class="formularios" name="tCodigoProduto" id="cCodigoProduto" placeholder="Código do Produto" /></td>
                 </tr>

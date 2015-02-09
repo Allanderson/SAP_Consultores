@@ -3,14 +3,14 @@
 <title>Clientes</title>
 <link rel="stylesheet" type="text/css" href="css/sair.css"/>
 <link rel="stylesheet" type="text/css" href="css/menuConsultor.css" />
-<link rel="stylesheet" type="text/css" href="css/listaDeClientes.css"/>
+<link rel="stylesheet" type="text/css" href="css/listaDeClientesProdutos.css"/>
 <link rel="stylesheet" type="text/css" href="css/boasVindas.css"/>
 <c:import url="cabecalho2.jsp" />
 <c:import url="menuConsultorComInicio.jsp" />
 <c:import url="sair.jsp" />
 <c:import url="boasVindas.jsp" />
 
-<div id="listaClientes">
+<div id="listaClientesProdutos">
 <form id="pesquisar" action="" method="">
     <label for="cCategoria"><strong>Localizar Por:</strong></label>
         <select name="tCategoria" id="cCategoria" >
@@ -22,7 +22,7 @@
 </form>
 
 <a id="novoCadastro" href="cadastroCliente.jsp"><strong>Novo Cadastro</strong></a>
-<table  id="listaClientes">
+<table  id="listaClientesProdutos">
     <tr>
         <th colspan="4">Dados Cliente</th>
         <th colspan="2">Ações</th>

@@ -51,34 +51,35 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
       if (_jspx_meth_c_import_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("    <title>SAP Concultores</title>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href = \"css/slideShow.css\"/>\n");
-      out.write("    <script  type=\"text/javascript\" src= \"js/jquery.min.js\"></script>\n");
-      out.write("    <script  type=\"text/javascript\" src= \"js/jquery.cycle.all.js\"></script>\n");
-      out.write("    <script  type=\"text/javascript\" src= \"js/comandosSlideShow.js\"></script>\n");
+      out.write("\r\n");
+      out.write("<title>SAP Concultores</title>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href = \"css/slideShow.css\"/>\r\n");
+      out.write("<script  type=\"text/javascript\" src= \"js/jquery.min.js\"></script>\r\n");
+      out.write("<script  type=\"text/javascript\" src= \"js/jquery.cycle.all.js\"></script>\r\n");
+      out.write("<script  type=\"text/javascript\" src= \"js/comandosSlideShow.js\"></script>\r\n");
       if (_jspx_meth_c_import_1(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_2(_jspx_page_context))
         return;
-      out.write('\n');
+      out.write("\r\n");
+      out.write("    ");
+      out.write("\r\n");
+      out.write("<div class=\"slideShow\">\r\n");
+      out.write("    <ul>\r\n");
+      out.write("        <li> <img src=\"imagens/aSlide.jpg\" alt=\"PrimeiraImagem\"/> </li>\r\n");
+      out.write("        <li> <img src=\"imagens/bSlide.jpg\" alt=\"SegundaImagem\"/> </li>\r\n");
+      out.write("        <li> <img src=\"imagens/cSlide.jpg\" alt=\"TerceiraImagem\"/> </li>\r\n");
+      out.write("        <li> <img src=\"imagens/dSlide.jpg\" alt=\"QuartaImagem\"/> </li>\r\n");
+      out.write("    </ul>\r\n");
+      out.write("</div>\r\n");
       if (_jspx_meth_c_import_3(_jspx_page_context))
         return;
-      out.write('\n');
-      out.write("\n");
-      out.write("            <div class=\"slideShow\">\n");
-      out.write("                <ul>\n");
-      out.write("                    <li> <img src=\"imagens/aSlide.jpg\" alt=\"PrimeiraImagem\"/> </li>\n");
-      out.write("                    <li> <img src=\"imagens/bSlide.jpg\" alt=\"SegundaImagem\"/> </li>\n");
-      out.write("                    <li> <img src=\"imagens/cSlide.jpg\" alt=\"TerceiraImagem\"/> </li>\n");
-      out.write("                    <li> <img src=\"imagens/dSlide.jpg\" alt=\"QuartaImagem\"/> </li>\n");
-      out.write("                </ul>\n");
-      out.write("            </div>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

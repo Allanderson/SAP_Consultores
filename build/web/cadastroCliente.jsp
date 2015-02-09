@@ -19,8 +19,8 @@
             <fieldset id="formularios">
                 <table id="formularios">
                     <tr>
-                        <td><label for="cCodigoConsultor">Código Do Consultor:</label></td>
-                        <td><input type="text" required="true" autofocus="" class="formularios" name="tCodigoConsultor" id="cCodigoConsultor" placeholder="Código do Consultor"/></td>
+                        <td><label for="cNivelPermissao">Nível de Permissão:</label></td>
+                        <td><input type="text" required="true" autofocus="" class="formularios" name="tNivelPermissao" id="cNivelPermissao" placeholder="Seu Nével de permissão"/></td>
                     </tr>
                     <tr>
                         <td><label for="cCodigoCliente">Código do Cliente:</label></td>
@@ -45,6 +45,11 @@
                     <tr>
                         <td><label for="cSenha">Senha:</label></td>
                         <td><input type="password" required="true" class="formularios" name="tSenha" id="cSenha" placeholder="Senha" /></td>
+                    </tr>
+                    <tr>
+					 <tr>
+                        <td><label for="cConfirmarSenha">Confirmar Senha:</label></td>
+                        <td><input type="password" required="true" class="formularios" name="tConfirmarSenha" id="cConfirmarSenha" placeholder="Confirme sua senha" /></td>
                     </tr>
                     <tr>
                         <td><input type="submit" name="tCadastrar" id="cCadastrar" value="Cadastrar" />

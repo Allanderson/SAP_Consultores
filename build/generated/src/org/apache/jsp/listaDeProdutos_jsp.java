@@ -51,81 +51,93 @@ public final class listaDeProdutos_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("<title>Clientes</title>\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/sair.css\"/>\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/menuConsultor.css\" />\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/listaDeClientes.css\"/>\n");
+      out.write("\r\n");
+      out.write("<title>Produtos</title>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/sair.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/menuConsultor.css\" />\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/listaDeProdutos.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas.css\"/>\r\n");
       if (_jspx_meth_c_import_1(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_2(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_import_3(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\n");
-      out.write("<div id=\"listaProdutos\">\n");
-      out.write("<form id=\"pesquisar\" action=\"\" method=\"\">\n");
-      out.write("    <label for=\"cCategoria\"><strong>Localizar Por:</strong></label>\n");
-      out.write("        <select name=\"tCategoria\" id=\"cCategoria\" >\n");
-      out.write("            <option value=\"nome\">Nome</option>\n");
-      out.write("            <option value=\"codigo\">Código</option>            \n");
-      out.write("        </select>\n");
-      out.write("    <input type=\"text\" name=\"tCategoriaDigitada\" id=\"cCategoriaDigitada\" />\n");
-      out.write("    <input type=\"image\" name=\"tPesquisar\" id=\"cPesquisar\" src=\"imagens/pesquisar.png\"/>\n");
-      out.write("</form>\n");
-      out.write("\n");
-      out.write("<a id=\"novoCadastro\" href=\"cadastroProduto.jsp\"><strong>Novo Cadastro</strong></a>\n");
-      out.write("<table  id=\"listaProdutos\">\n");
-      out.write("    <tr class=\"linha\">\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("            Código  \n");
-      out.write("        </th>\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("            Nome  \n");
-      out.write("        </th>\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("            preço\n");
-      out.write("        </th>\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("            Quantidade\n");
-      out.write("        </th>\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("           Alterar \n");
-      out.write("        </th>\n");
-      out.write("        <th class=\"coluna\">\n");
-      out.write("            Excluir\n");
-      out.write("        </th>\n");
-      out.write("    </tr>\n");
-      out.write("    \n");
-      out.write("    <tr class=\"linha\">\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            321  \n");
-      out.write("        </td>\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            Quasar Brasil   \n");
-      out.write("        </td>\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            85.00\n");
-      out.write("        </td>\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            4\n");
-      out.write("        </td>\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            <a href=\"\" ><img src=\"imagens/editar.png\" /></a> \n");
-      out.write("        </td>\n");
-      out.write("        <td class=\"coluna\">\n");
-      out.write("            <a href=\"\"><img src=\"imagens/delete.png\"/></a>\n");
-      out.write("        </td>\n");
-      out.write("    </tr>\n");
-      out.write("</table>\n");
-      out.write("</div>\n");
+      out.write('\r');
+      out.write('\n');
       if (_jspx_meth_c_import_4(_jspx_page_context))
+        return;
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<div id=\"listaProdutos\">\r\n");
+      out.write("<form id=\"pesquisar\" action=\"\" method=\"\">\r\n");
+      out.write("    <label for=\"cCategoria\"><strong>Localizar Por:</strong></label>\r\n");
+      out.write("        <select name=\"tCategoria\" id=\"cCategoria\" >\r\n");
+      out.write("            <option value=\"nome\">Nome</option>\r\n");
+      out.write("            <option value=\"codigo\">Código</option>            \r\n");
+      out.write("        </select>\r\n");
+      out.write("    <input type=\"text\" name=\"tCategoriaDigitada\" id=\"cCategoriaDigitada\" />\r\n");
+      out.write("    <input type=\"image\" name=\"tPesquisar\" id=\"cPesquisar\" src=\"imagens/pesquisar.png\"/>\r\n");
+      out.write("</form>\r\n");
+      out.write("\r\n");
+      out.write("<a id=\"novoCadastro\" href=\"cadastroProduto.jsp\"><strong>Novo Cadastro</strong></a>\r\n");
+      out.write("<table  id=\"listaProdutos\">\r\n");
+      out.write("    <tr>\r\n");
+      out.write("        <th colspan=\"4\">Dados Produto</th>\r\n");
+      out.write("        <th colspan=\"2\">Ações</th>\r\n");
+      out.write("    </tr>\r\n");
+      out.write("    <tr class=\"linha\">\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("            Código  \r\n");
+      out.write("        </th>\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("            Nome  \r\n");
+      out.write("        </th>\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("            preço\r\n");
+      out.write("        </th>\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("            Quantidade\r\n");
+      out.write("        </th>\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("           Alterar \r\n");
+      out.write("        </th>\r\n");
+      out.write("        <th class=\"coluna\">\r\n");
+      out.write("            Excluir\r\n");
+      out.write("        </th>\r\n");
+      out.write("    </tr>\r\n");
+      out.write("    \r\n");
+      out.write("    <tr class=\"linha\">\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            321  \r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            Quasar Brasil   \r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            85.00\r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            4\r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            <a href=\"\" ><img src=\"imagens/editar.png\" /></a> \r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td class=\"coluna\">\r\n");
+      out.write("            <a href=\"\"><img src=\"imagens/delete.png\"/></a>\r\n");
+      out.write("        </td>\r\n");
+      out.write("    </tr>\r\n");
+      out.write("</table>\r\n");
+      out.write("</div>\r\n");
+      if (_jspx_meth_c_import_5(_jspx_page_context))
         return;
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -200,7 +212,7 @@ public final class listaDeProdutos_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_import_2 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _jspx_tagPool_c_import_url_nobody.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
     _jspx_th_c_import_2.setPageContext(_jspx_page_context);
     _jspx_th_c_import_2.setParent(null);
-    _jspx_th_c_import_2.setUrl("menuConsultorComInicio.jsp");
+    _jspx_th_c_import_2.setUrl("boasVindas.jsp");
     int[] _jspx_push_body_count_c_import_2 = new int[] { 0 };
     try {
       int _jspx_eval_c_import_2 = _jspx_th_c_import_2.doStartTag();
@@ -226,7 +238,7 @@ public final class listaDeProdutos_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_import_3 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _jspx_tagPool_c_import_url_nobody.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
     _jspx_th_c_import_3.setPageContext(_jspx_page_context);
     _jspx_th_c_import_3.setParent(null);
-    _jspx_th_c_import_3.setUrl("sair.jsp");
+    _jspx_th_c_import_3.setUrl("menuConsultorComInicio.jsp");
     int[] _jspx_push_body_count_c_import_3 = new int[] { 0 };
     try {
       int _jspx_eval_c_import_3 = _jspx_th_c_import_3.doStartTag();
@@ -252,7 +264,7 @@ public final class listaDeProdutos_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_import_4 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _jspx_tagPool_c_import_url_nobody.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
     _jspx_th_c_import_4.setPageContext(_jspx_page_context);
     _jspx_th_c_import_4.setParent(null);
-    _jspx_th_c_import_4.setUrl("rodape.jsp");
+    _jspx_th_c_import_4.setUrl("sair.jsp");
     int[] _jspx_push_body_count_c_import_4 = new int[] { 0 };
     try {
       int _jspx_eval_c_import_4 = _jspx_th_c_import_4.doStartTag();
@@ -266,6 +278,32 @@ public final class listaDeProdutos_jsp extends org.apache.jasper.runtime.HttpJsp
     } finally {
       _jspx_th_c_import_4.doFinally();
       _jspx_tagPool_c_import_url_nobody.reuse(_jspx_th_c_import_4);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_import_5(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:import
+    org.apache.taglibs.standard.tag.rt.core.ImportTag _jspx_th_c_import_5 = (org.apache.taglibs.standard.tag.rt.core.ImportTag) _jspx_tagPool_c_import_url_nobody.get(org.apache.taglibs.standard.tag.rt.core.ImportTag.class);
+    _jspx_th_c_import_5.setPageContext(_jspx_page_context);
+    _jspx_th_c_import_5.setParent(null);
+    _jspx_th_c_import_5.setUrl("rodape.jsp");
+    int[] _jspx_push_body_count_c_import_5 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_import_5 = _jspx_th_c_import_5.doStartTag();
+      if (_jspx_th_c_import_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_import_5[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_import_5.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_import_5.doFinally();
+      _jspx_tagPool_c_import_url_nobody.reuse(_jspx_th_c_import_5);
     }
     return false;
   }

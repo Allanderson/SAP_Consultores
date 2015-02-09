@@ -8,7 +8,7 @@
 <script  type="text/javascript" src= "js/comandosSlideShow.js"></script>
 <c:import url="cabecalho2.jsp" />
 <c:import url="formularioEntrar.jsp" />
-<%-- Apresentação do Slide Show --%>
+    <%-- Apresentação do Slide Show --%>
 <div class="slideShow">
     <ul>
         <li> <img src="imagens/aSlide.jpg" alt="PrimeiraImagem"/> </li>
