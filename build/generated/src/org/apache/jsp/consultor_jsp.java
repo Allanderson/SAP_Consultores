@@ -57,10 +57,9 @@ public final class consultor_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\r\n");
       out.write("<title>Consultor</title>\r\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas.css\"/>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas_sair.css\"/>\r\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/menuConsultor.css\"/>\r\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/relatorioVendas.css\"/>\r\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/sair.css\"/>\r\n");
       if (_jspx_meth_c_import_1(_jspx_page_context))
         return;
       out.write('\r');

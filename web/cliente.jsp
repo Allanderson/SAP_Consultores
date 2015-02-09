@@ -2,8 +2,7 @@
 
 <c:import url="cabecalho1.jsp" />
 <title>Cliente</title>
-<link rel="stylesheet" type="text/css" href="css/sair.css"/>
-<link rel="stylesheet" type="text/css" href="css/boasVindas.css"/>
+<link rel="stylesheet" type="text/css" href="css/boasVindas_sair.css"/>
 <c:import url="cabecalho2.jsp" />
 <c:import url="boasVindas.jsp" />
 <c:import url="sair.jsp" />

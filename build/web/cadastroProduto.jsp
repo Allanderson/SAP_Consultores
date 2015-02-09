@@ -2,8 +2,7 @@
 
 <c:import url="cabecalho1.jsp" />
 <title> Cadastro Produto</title>
-<link rel="stylesheet" type="text/css" href="css/boasVindas.css"/>
-<link rel="stylesheet" type="text/css" href="css/sair.css"/>
+<link rel="stylesheet" type="text/css" href="css/boasVindas_sair.css"/>
 <link rel="stylesheet" type="text/css" href="css/formulariosCadastros.css"/>
 <link rel="stylesheet" type="text/css" href="css/menuConsultor.css"/>
 <c:import url="cabecalho2.jsp" />

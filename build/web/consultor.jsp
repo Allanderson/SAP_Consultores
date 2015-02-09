@@ -2,10 +2,9 @@
 
 <c:import url="cabecalho1.jsp" />
 <title>Consultor</title>
-<link rel="stylesheet" type="text/css" href="css/boasVindas.css"/>
+<link rel="stylesheet" type="text/css" href="css/boasVindas_sair.css"/>
 <link rel="stylesheet" type="text/css" href="css/menuConsultor.css"/>
 <link rel="stylesheet" type="text/css" href="css/relatorioVendas.css"/>
-<link rel="stylesheet" type="text/css" href="css/sair.css"/>
 <c:import url="cabecalho2.jsp" />
 <c:import url="boasVindas.jsp" />
 <c:import url="menuConsultor.jsp" />
