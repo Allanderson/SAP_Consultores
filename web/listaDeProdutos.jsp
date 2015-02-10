@@ -1,10 +1,9 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:import url="cabecalho1.jsp" />
 <title>Produtos</title>
-<link rel="stylesheet" type="text/css" href="css/sair.css"/>
 <link rel="stylesheet" type="text/css" href="css/menuConsultor.css" />
 <link rel="stylesheet" type="text/css" href="css/listaDeClientesProdutos.css"/>
-<link rel="stylesheet" type="text/css" href="css/boasVindas.css"/>
+<link rel="stylesheet" type="text/css" href="css/boasVindas_sair.css"/>
 <c:import url="cabecalho2.jsp" />
 <c:import url="boasVindas.jsp" />
 <c:import url="menuConsultorComInicio.jsp" />

@@ -57,6 +57,7 @@ public final class cliente_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\r\n");
       out.write("<title>Cliente</title>\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/boasVindas_sair.css\"/>\r\n");
       if (_jspx_meth_c_import_1(_jspx_page_context))
         return;
       out.write('\r');
@@ -67,8 +68,10 @@ public final class cliente_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_c_import_3(_jspx_page_context))
         return;
-      out.write('\r');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("Não perca a oportunidade de ander perfumada(do)!<br>\r\n");
+      out.write("Venha loga, e faça já suas compras.<br>\r\n");
+      out.write("Aproveite que o nosso estoque está completo de coisas boas e novas.<br>\r\n");
       if (_jspx_meth_c_import_4(_jspx_page_context))
         return;
     } catch (Throwable t) {
