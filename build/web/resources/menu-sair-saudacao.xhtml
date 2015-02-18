@@ -1,0 +1,87 @@
+<ui:composition
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+    <style>
+        header#boasVindas {
+            display: block;
+            position: absolute;
+            font-family: 'FonteLogo', sans-serif;
+            left: 500px;
+            margin-top: -55px; 
+            font-size: 30pt;
+        }
+        header#boasVindas td {
+            background-color: white;
+        }
+
+
+        .sairForm .sairBotao {
+            position: absolute;
+            top: 0px;
+            left: 1110px;
+            height: 30px;
+            width: 70px;
+            color: red;
+            font-size: 15px;
+            border-radius: 0px 10px 0px 10px;
+            border-top-color: red;
+            border-left-color: red;
+            border-right-color: #09F;
+            border-bottom-color: #09F;    
+            background-color: #ffffff;
+        }
+
+        .menu{
+            position: relative;
+            top: 0px;
+            width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #09F;
+        }
+
+        #menuC *{
+            color: #FFF;
+            font-family: 'FonteLogo', sans-serif;
+            font-size: 18pt;
+        }
+
+        #menuC .item-menu-cadastro{
+            background-color: #09F;        
+        } 
+    </style>
+    <header id="boasVindas">
+        <table>
+            <tr>
+                <td id="bemVindo">
+                    <script>saudacao();</script><strong style="color: white;">.</strong>
+                </td>
+
+                <td id="nomeCliente">
+                    Allan
+                </td>
+            </tr>
+        </table>            
+    </header>
+    <header id="botaoSair">
+        <h:form styleClass="sairForm">
+            <p:commandButton styleClass="sairBotao" ajax="false" value="Sair" icon="ui-icon-extlink" 
+                             action="#{usuarioBean.x()}" />
+        </h:form>
+    </header>
+    <div id="menuC">
+        <h:form>
+            <p:menubar styleClass="menu">
+                <p:menuitem value="Home" icon="ui-icon-home" styleClass="item-menus"/>
+                <p:submenu label="Cadastro" icon="ui-icon-note" styleClass="submenu-cad">
+                    <p:menuitem value="Clientes" styleClass="item-menu-cadastro" url="cliente.xhtml" ajax="false"/>
+                    <p:menuitem value="Produtos" styleClass="item-menu-cadastro" url="produtos.xhtml" ajax="false"/> 
+                </p:submenu>
+                <p:menuitem value="Pagamento" icon="ui-icon-calculator" styleClass="item-menus"/>
+                <p:menuitem value="Nova Venda" icon="ui-icon-cart" styleClass="item-menus"/>
+            </p:menubar>
+        </h:form>
+    </div>
+</ui:composition>

@@ -1,0 +1,32 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="titulo">SAP Consultores</ui:define>
+
+    <ui:define name="login">
+        <h:form styleClass="formEntrar">
+            <h:panelGrid columns="5" cellspacing="4">
+                <p:outputLabel for="cLogin" value="Login: " styleClass="label" />
+                <p:inputText id="cLogin" size="20" styleClass="cLogin" /> 
+                <p:outputLabel for="cSenha" value="Senha: " styleClass="label" />
+                <p:password id="cSenha" size="20" styleClass="cSenha" validatorMessage="campo"/> 
+                <p:commandButton styleClass="cEntrar" value="Entrar" ajax="false" action="area-consultor.xhtml"/>
+            </h:panelGrid>
+            <p style="position: absolute; top: 30px; right: 0px; color: red;">
+                usuário ou senha invalidos
+            </p>
+        </h:form>
+    </ui:define>
+    <ui:define name="slide">
+        <div class="slideShow">
+            <ul>
+                <li><p:graphicImage library="imagens" name="eSlide.jpg" alt="PrimeiraImagem" styleClass="img"/></li>
+                <li><p:graphicImage library="imagens" name="bSlide.jpg" alt="SegundaImagem" styleClass="img" /></li>
+                <li><p:graphicImage library="imagens" name="cSlide.jpg" alt="TerceiraImagem" styleClass="img"/></li>
+                <li><p:graphicImage library="imagens" name="dSlide.jpg" alt="QuartaImagem" styleClass="img" /></li>
+            </ul>
+        </div>
+    </ui:define>
+</ui:composition>

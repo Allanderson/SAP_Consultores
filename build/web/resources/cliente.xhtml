@@ -1,0 +1,48 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="titulo">Consultor</ui:define>
+    <ui:define name="consultor">
+        <style>
+            footer#rodape{
+                margin-top: 100px;
+            }
+        </style>
+        <ui:include src="menu-sair-saudacao.xhtml" />
+        <div id="pesquisa">
+            <h:panelGrid columns="4">
+                <h:selectOneMenu>
+                    <f:selectItem itemLabel="" itemValue="" />
+                    <f:selectItem itemLabel="Código" itemValue="C" />
+                    <f:selectItem itemLabel="Nome" itemValue="N" />
+                </h:selectOneMenu>
+                <h:inputText />
+                <a href="#{usuarioBean.x()}"><img src="imagens/pesquisar.png" class="img-pesquisar"/></a>
+            </h:panelGrid>
+        </div>
+        <p:link href="index.xhtml" value="Novo Registro" styleClass="novo-registro"/>
+
+        <p:dataTable value="#{usuarioBean.lista}" var="usuario" styleClass="tabela">
+            <p:column headerText="ID" style="text-align: center; width: 50px;">
+                <h:outputText value="#{usuario.id}" />
+            </p:column>
+            <p:column headerText="Nome" style="">
+                <h:outputText value="#{usuario.nome}" />
+            </p:column>
+            <p:column headerText="Endereço" style=" width: 150px;">
+                <h:outputText value="#{usuario.endereco}" />
+            </p:column>
+            <p:column headerText="Telefone" style="text-align: center; width: 150px;">
+                <h:outputText value="(84)1234-5678" />
+            </p:column>
+            <p:column headerText="Alterar" style="text-align: center; width: 70px;">
+                <p:graphicImage library="imagens" name="editar.png" style="width: 25px; height: 25px;"/>
+            </p:column>
+            <p:column headerText="Excluir" style="text-align: center; width: 70px;">
+                <p:graphicImage library="imagens" name="delete.png" style="width: 25px; height: 25px;"/>
+            </p:column>
+        </p:dataTable>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title><ui:insert name="titulo" /></title>
+        <link rel="shortcut icon" href="imagens/libelula.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <h:outputStylesheet library="css" name = "estiloCabecalhoRodape.css" />  
+        <h:outputStylesheet library="css" name = "slideShow.css" />
+        <h:outputStylesheet library="css" name = "listas.css" />
+        <h:outputScript library="js" name= "jquery.min.js" />
+        <h:outputScript library="js" name= "jquery.cycle.all.js" />
+        <h:outputScript library="js" name= "comandosSlideShow.js" />
+        <h:outputScript library="js" name= "scripts.js" />
+        <style>
+            @font-face{
+                font-family: 'FonteLogo';
+                src:url(fontes/bubblegum-sans-regular.otf);
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div id="corpo">
+            <header id="cabecalho">
+                <h:graphicImage library="imagens" name="libelula.jpg" />
+                <nav id="nomeLogo">
+                    <h2>SAP</h2>
+                    <h3>Consultores</h3>
+                </nav>
+            </header>
+            <ui:insert name="consultor" />
+            <ui:insert name="login" />
+            <ui:insert name="slide" />
+            <footer id="rodape">                
+                <table id="rodape">
+                    <tr>
+                        <td> <p:graphicImage library="imagens" name="libelula.jpg"/> </td>
+                        <td> <h4>SAP</h4> </td>
+                        <td>&copy;</td>
+                        <td><h4><script>copy();</script></h4></td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </h:body>
+</html>

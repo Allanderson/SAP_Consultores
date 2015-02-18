@@ -1,0 +1,24 @@
+.tabela{
+    width: 900px; 
+    margin: 200px auto 0px auto;
+}
+
+.novo-registro{
+    text-decoration: none;
+    position: absolute;
+    margin: 170px 0px 0px 850px;
+}
+
+.novo-registro:hover{
+    color: red;
+}
+
+#pesquisa{
+    position: absolute;
+    margin: 110px 50px 50px 100px;
+}
+
+.img-pesquisar{
+    width: 35px;
+    height: 35px;
+}
