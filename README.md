@@ -4,15 +4,15 @@
   Obs(O projeto está em conversão para JSF).
 
 # Ferramentas Utilizadas:
-Netbeans IDE
-MYSQL Workbench
-Git e GitHub
+Netbeans IDE;
+MYSQL Workbench;
+Git e GitHub;
 
 # Bibliotecas:
-Conector MYSQL
-Primefaces
+Conector MYSQL;
+Primefaces;
 JSF
 
 # Linguagens:
-Java
+Java;
 HTML, CSS e JavaScript
