@@ -1,18 +1,20 @@
-# SAP_Consultores
+SAP_Consultores
 
+  
   Sistema para auxiliar consultores em vendas de cosméticos. 
-  Obs(O projeto está em conversão para JSF).
+Obs (O projeto está em conversão para JSF).
 
-# Ferramentas Utilizadas:
+Ferramentas Utilizadas:
 Netbeans IDE;
 MYSQL Workbench;
-Git e GitHub;
+Apache Tomcat;
+Git e GitHub.
 
-# Bibliotecas:
+Bibliotecas:
 Conector MYSQL;
 Primefaces;
-JSF
+JSF.
 
-# Linguagens:
+Linguagens:
 Java;
-HTML, CSS e JavaScript
+HTML, CSS e JavaScript.
