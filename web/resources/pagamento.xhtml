@@ -1,0 +1,33 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui" >
+    
+    <ui:define name="titulo">Pagamento</ui:define>
+    
+    <ui:define name="consultor">
+        <ui:include src="menu-sair-saudacao.xhtml" />
+        
+        <h1 id="h1formPagamento">Realize seus pagamentos</h1>
+        <h:form id="formPagamento">
+            <p:fieldset id="formPagamento">
+                <h:panelGrid columns="2" id="panelPagamento">
+                    <h:outputLabel for="codClientes" value="Código do Cliente:" styleClass="labelForm" />
+                    <h:inputText id="codClientes" styleClass="inputForm" />
+                    
+                    <h:outputLabel for="valor" value="Valor Pago:" styleClass="labelForm" />
+                    <h:inputText id="valor" styleClass="inputForm" />
+                    
+                    <h:outputLabel for="dataPagamento" value="Data do Pagamento:" styleClass="labelForm" />
+                    <h:inputText id="dataPagamento" styleClass="inputForm" />
+                    
+                    <h:commandButton value="Pagar" action="confirmacao2.xhtml" styleClass="botaoForm" />
+                    <h:commandButton value="Limpar" action="index.xhtml" styleClass="botaoForm" /> 
+                </h:panelGrid>
+            </p:fieldset>
+        </h:form>
+                
+    </ui:define>
+                    
+</ui:composition>
