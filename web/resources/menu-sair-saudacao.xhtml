@@ -52,6 +52,7 @@
             background-color: #09F;        
         } 
     </style>
+    
     <header id="boasVindas">
         <table>
             <tr>
@@ -65,12 +66,14 @@
             </tr>
         </table>            
     </header>
+    
     <header id="botaoSair">
         <h:form styleClass="sairForm">
             <p:commandButton styleClass="sairBotao" ajax="false" value="Sair" icon="ui-icon-extlink" 
                              action="#{usuarioBean.x()}" />
         </h:form>
     </header>
+    
     <div id="menuC">
         <h:form>
             <p:menubar styleClass="menu">
@@ -79,9 +82,10 @@
                     <p:menuitem value="Clientes" styleClass="item-menu-cadastro" url="cliente.xhtml" ajax="false"/>
                     <p:menuitem value="Produtos" styleClass="item-menu-cadastro" url="produtos.xhtml" ajax="false"/> 
                 </p:submenu>
-                <p:menuitem value="Pagamento" icon="ui-icon-calculator" styleClass="item-menus"/>
-                <p:menuitem value="Nova Venda" icon="ui-icon-cart" styleClass="item-menus"/>
+                <p:menuitem value="Pagamento" icon="ui-icon-calculator" styleClass="item-menus" url="pagamento.xhtml" ajax="false"/>
+                <p:menuitem value="Nova Venda" icon="ui-icon-cart" styleClass="item-menus" url="vendas.xhtml" ajax="false"/>
             </p:menubar>
         </h:form>
     </div>
+    
 </ui:composition>

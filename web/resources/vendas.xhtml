@@ -1,0 +1,43 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+                
+    <ui:define name="titulo"> Nova Venda </ui:define>
+    
+    <ui:define name="consultor">
+        <ui:include src="menu-sair-saudacao.xhtml" />
+        <h1 id="h1formVender">Realize aqui uma Nova Venda</h1>        
+        
+        <h:form id="formVender">
+            <p:fieldset id="formVender">
+                <h:panelGrid columns="2" styleClass="panelVender">
+                
+                    <h:outputLabel value="Código do Cliente:" for="codCliente" styleClass="labelForm"/>
+                    <h:inputText id="codCliente" styleClass="inputForm"/>
+                
+                    <h:outputLabel value="Código do Consultor:" for="codConsultor" styleClass="labelForm"/>
+                    <h:inputText id="codConsultor" styleClass="inputForm"/>
+                
+                    <h:outputLabel value="Data da Venda:" for="dataVenda" styleClass="labelForm"/>
+                    <h:inputText id="dataVenda" styleClass="inputForm"/>
+                    
+                    <h:outputLabel value="Nº de Parcelas:" for="nParcelas" styleClass="labelForm" />
+                    <h:inputText id="nParcelas" styleClass="inputForm"/>
+                    
+                    <h:outputLabel value="Valor da Venda:" for="valorVenda" styleClass="labelForm"/>
+                    <h:inputText id="valorVenda" styleClass="inputForm"/>                  
+                    
+                    <h:outputLabel value="Adicione um Item:" styleClass="labelForm"/>
+                    <h:commandButton value="Adicionar" id="add" action="item.xhtml" styleClass="botaoForm"/>
+                
+                    <h:commandButton value="Vender" action="confirmacao.xhtml" styleClass="botaoForm"/>
+                    <h:commandButton value="Limpar" action="produtos.xhtml" styleClass="botaoForm"/>
+                </h:panelGrid>
+            </p:fieldset>
+        </h:form>
+        
+    </ui:define>   
+
+</ui:composition>

@@ -1,0 +1,29 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+                    
+    <ui:define name="titulo">Item da Venda</ui:define>
+    
+    <ui:define name="consultor">
+        <ui:include src="menu-sair-saudacao.xhtml" />
+        
+        <h1 id="h1formItem">Adicione os itens desejados a sua venda</h1>
+                           
+            <h:form id="forItem">
+                <p:fieldset id="formItem"> 
+                    <h:panelGrid columns="2" styleClass="panelItem">
+                        <h:outputLabel value="Código do Produto:" for="codProduto" styleClass="labelForm"/>
+                        <h:inputText id="codProduto" styleClass="inputForm"/>
+                
+                        <h:outputLabel value="Quantidade de Itens:" for="qntItem" styleClass="labelForm"/>
+                        <h:inputText id="qntItem" styleClass="inputForm"/>
+             
+                        <h:commandButton value="Adicionar" action="confirmacao1.xhtml" styleClass="botaoForm"/>
+                        <h:commandButton value="Limpar" action="index.xhtml" styleClass="botaoForm"/>
+                    </h:panelGrid>
+                </p:fieldset>
+            </h:form>        
+    </ui:define>
+</ui:composition>

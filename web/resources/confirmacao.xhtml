@@ -1,0 +1,19 @@
+<ui:composition template="template01.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui" >                
+   
+    <ui:define name="titulo">Confirmação</ui:define>
+    
+    <ui:define name="consultor">
+        <ui:include src="menu-sair-saudacao.xhtml" />
+        
+        <h1 id="h1confirmacao">Realizado com Sucesso!</h1>
+        <h:form id="confirmacao">
+            <h:panelGrid id="panelconfirmacao">
+                <h:commandLink value="Voltar" styleClass="link1" action="vendas.xhtml"/>
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>

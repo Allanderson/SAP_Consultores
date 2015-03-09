@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document*/
+
+/*Formatação do formulário para adicionar item nas vendas*/
+#forItem {
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+/*Formatação do h1 do formulário para adicionar item as vendas*/
+#h1formItem{
+    display: block;
+    position: relative;
+    font-family: 'FonteLogo';
+    color: #09F;
+    text-align: center;
+    top: 70px;
+}
+
+/*Formatação do fieldset do formulário para adicionar item nas vendas*/
+#forItem fieldset {
+    display: block;
+    position: relative;
+    width: 440px;
+    height: 150px;
+    margin: 80px 255px 20px ;
+    border-radius: 0px 30px 0px 30px;
+}
+
+/*Formatação dos commadButon do formulário para adicionar item nas vendas*/
+.botaoForm {
+    border-radius: 7px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #888888;
+}
+
+/*Formatação dos inputText dos formulários*/
+.inputForm {
+    font-size: 10pt;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    margin: 3px;
+}
+
+/*Formatação dos outputLabel dos formulários*/
+.labelForm {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #606060;
+}
+
+/*Formatação do Formulário Vender*/
+#formVender fieldset {
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 290px;
+    margin: 80px auto 20px auto;
+    border-radius: 0px 30px 0px 30px;
+}
+
+/*Formatação do h1 do formulário vender*/
+#h1formVender {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    font-family: 'FonteLogo', sans-serif;
+    color: #09f;
+}
+
+/*Formatação do Formuário Pagamento*/
+#formPagamento fieldset {
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 180px;
+    border-radius: 0px 30px 0px 30px;
+    margin: 80px auto 20px auto;
+}
+
+#h1formPagamento {
+    display: block;
+    position: relative;
+    top:70px;
+    color: #09F;
+    text-align: center;
+    font-family: 'FonteLogo', sans-serif;
+}
