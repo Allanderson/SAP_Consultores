@@ -6,21 +6,26 @@
 
     <ui:define name="titulo">Consultor</ui:define>
     <ui:define name="consultor">
+        
         <style>
             footer#rodape{
                 margin-top: 100px;
             }
         </style>
+        
         <ui:include src="menu-sair-saudacao.xhtml" />
-        <p:fieldset style="background-color: #888888; width: 300px;">
-            <h:form>
-                <p:panelGrid columns="2">
-                    <p:outputLabel value="Valor a Receber: " for="valor-receber" />
-                    <h:outputText id="valor-receber" value="20.00" />
-                    <p:outputLabel value="Valor Pago: " for="valor-pago" />
-                    <h:outputText id="valor-pago" value="30.00"/>
-                </p:panelGrid>
+        
+        <h1 id="relatorioVendas">Relatório das Vendas</h1>        
+        
+        <h:form id="relatorio-vendas">
+            <h:panelGrid columns="2" id="panel-relatorio">
+                    <h:outputLabel value="Valor a Receber: " for="valor-receber" styleClass="campo-relatorio"/>
+                    <h:outputText id="valor-receber" value="R$ 20.00" styleClass="campo-relatorio" />
+                    
+                    <h:outputLabel value="Valor Pago: " for="valor-pago" styleClass="campo-relatorio"/>
+                    <h:outputText id="valor-pago" value="R$ 30.00" styleClass="campo-relatorio"/>
+                </h:panelGrid>
             </h:form>
-        </p:fieldset>
+        
     </ui:define>
 </ui:composition>
