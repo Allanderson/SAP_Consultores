@@ -1,0 +1,33 @@
+@charset "uft-8";
+/* CSS Document*/
+
+/*Formatação do h1 do formulário do relatório de vendas*/
+#relatorioVendas {
+    font-family: 'FonteLogo', sans-serif;
+    display: block;
+    position: relative;
+    color:#09F;
+    left: 60px;
+    top:35px;
+}
+
+/*Formatação do formulário do relatório de vendas*/
+#relatorio-vendas {
+    display: block;
+    position: relative;
+    left: 25px;
+    top: 15px;
+}
+
+/*Formatação dos campos do panelGrid*/
+.campo-relatorio {
+    display: block;
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+   
+    font-weight: bold;
+    color: #606060;
+    height: 30px;
+    width: 150px;
+}
