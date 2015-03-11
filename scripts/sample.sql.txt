@@ -1,0 +1,9 @@
+﻿insert into usuario(permissao, nome, endereco, telefone, login, senha)
+
+values(2, 'Allanderson Nunes', 'Rua', null, 'Allan', '1234');
+
+
+
+insert into usuario(permissao, nome, endereco, telefone, login, senha)
+
+values(3, 'Breno Nunes', 'Rua', null, 'Bebeu', '4321');

@@ -1,0 +1,111 @@
+﻿create table usuario(
+
+id_usuario bigint not null auto_increment,
+
+nome varchar(300) not null,
+
+endereco varchar(250) not null,
+
+telefone varchar(20),
+
+login varchar(100) not null unique,
+
+senha varchar(20) not null,
+
+permissao int not null,
+
+primary key(id_usuario)
+
+)engine = InnoDB;
+
+
+
+create table tipo(
+
+id_tipo bigint not null auto_increment,
+
+descricao varchar(300),
+
+primary key(id_tipo)
+
+)engine = InnoDB;
+
+
+
+create table produto(
+
+id_produto bigint not null auto_increment,
+
+id_tipo bigint not null,
+
+nome varchar(250) not null,
+
+preco double not null,
+
+volume varchar(20),
+
+quantidade int,
+
+foreign key(id_tipo) references tipo(id_tipo),
+
+primary key(id_produto)
+
+)engine = InnoDB;
+
+
+
+create table venda(
+
+id_venda bigint not null auto_increment,
+
+id_usuario bigint not null,
+
+data_venda date not null,
+
+valor_compra double not null,
+
+foreign key(id_usuario) references usuario(id_usuario),
+
+primary key(id_venda)
+
+)engine = InnoDB;
+
+
+
+create table item_venda(
+
+id_item bigint not null auto_increment,
+
+id_venda bigint not null,
+
+id_produto bigint not null,
+
+quantidade int not null,
+
+foreign key(id_venda) references venda(id_venda),
+
+foreign key(id_produto) references produto(id_produto),
+
+primary key(id_item)
+
+)engine = InnoDB;
+
+
+
+create table pagamento(
+
+id_pagamento bigint not null auto_increment,
+
+id_venda bigint not null,
+
+valor double not null,
+
+data_pagamento date not null,
+
+vencimento int not null,
+
+foreign key(id_venda) references venda(id_venda),
+
+primary key(id_pagamento)
+
+)engine = InnoDB;
