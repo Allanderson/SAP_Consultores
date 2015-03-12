@@ -1,19 +1,13 @@
-#SAP_Consultores
+﻿#SAP_Consultores
 
 Sistema para auxiliar consultores em vendas de cosméticos. 
-Obs (O projeto está em conversão para JSF).
 
-#Ferramentas Utilizadas:
-Netbeans IDE, 
-MYSQL Workbench, 
-Apache Tomcat, 
-Git e GitHub.
+#Necessário para o desenvolvimento:
+• Netbeans IDE, versão 8 ou superior;
+• SGDB (recomendado o MySQL Workbench);
+• Conhecimentos em Java (JSF, Orientação a Objetos), Primefaces e SQL.
 
-#Bibliotecas:
-Conector MYSQL, 
-Primefaces, 
-JSF.
+#Scripts:
+• Para ver os CREATES o diretório é: scripts/schemas.sql;
+• Para ver exemplos de código: scripts/sample.sql.
 
-#Linguagens:
-Java, 
-HTML, CSS e JavaScript.
